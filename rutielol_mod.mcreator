@@ -488,6 +488,66 @@
         ]
       },
       "path": "~/Mitchu"
+    },
+    {
+      "name": "ManexHoutDoor",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_hout_door",
+      "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "ManexDoorRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_door_recipe",
+      "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "ManexDoorRecipe2",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_door_recipe_2",
+      "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "ManexTrapdoor",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_trapdoor",
+      "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "ManexTrapdoorRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_trapdoor_recipe",
+      "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "ManexTrapdoorRecipe2",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_trapdoor_recipe_2",
+      "path": "~/Manex vallei/Manexhout"
     }
   ],
   "variable_elements": [],
@@ -548,8 +608,10 @@
       "item.minecraft.potion.effect.radiatie_effect": "Radiatie",
       "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
       "entity.rutielol_mod.eendman": "Eendman",
+      "block.rutielol_mod.manex_trapdoor": "Manex Trapdoor",
       "block.rutielol_mod.manexhout_planks": "Manexhout Planks",
       "block.rutielol_mod.manexhout_log": "Manexhout Log",
+      "block.rutielol_mod.manex_hout_door": "Manex Hout Door",
       "entity.rutielol_mod.eendman_bandiet": "Eendman Bandiet",
       "block.rutielol_mod.manexhout_stairs": "Manexhout Stairs",
       "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",

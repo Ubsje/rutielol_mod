@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "rutielol_mod:blocks/manextrapdoor",
+    "particle": "rutielol_mod:blocks/manextrapdoor"
+  }
+}

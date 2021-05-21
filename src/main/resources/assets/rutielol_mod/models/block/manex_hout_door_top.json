@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "rutielol_mod:blocks/manexdoorbottom",
+    "top": "rutielol_mod:blocks/manexdoortop"
+  }
+}
