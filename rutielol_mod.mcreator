@@ -388,6 +388,46 @@
       "ids": {},
       "registry_name": "manexhout_planks_recipe_log",
       "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "MitchuEiBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mitchu_ei_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mitchu"
+    },
+    {
+      "name": "MitchuEi",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mitchu_ei",
+      "path": "~/Mitchu"
     }
   ],
   "variable_elements": [],
@@ -419,13 +459,23 @@
       ],
       "category": "neutral",
       "subtitle": "Mitchu prrr"
+    },
+    {
+      "name": "mitchu_spawn",
+      "files": [
+        "mitchuspawn"
+      ],
+      "category": "neutral",
+      "subtitle": "Mitchu ei komt uit"
     }
   ],
   "language_map": {
     "en_us": {
+      "block.rutielol_mod.mitchu_ei": "Mitchu Ei",
       "block.rutielol_mod.manexhout_wood": "Manexhout Wood",
       "item.rutielol_mod.radioactieve_kat_spawn_egg": "Radioactieve Kat Spawn Egg",
       "entity.rutielol_mod.radioactieve_kat": "Radioactieve Kat",
+      "subtitles.mitchu_spawn": "Mitchu ei komt uit",
       "effect.radiatie_effect": "Radiatie",
       "block.rutielol_mod.manexhout_leaves": "Manexhout Leaves",
       "block.rutielol_mod.manexhout_fence": "Manexhout Fence",

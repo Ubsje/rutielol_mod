@@ -1,0 +1,8 @@
+{
+  "parent": "rutielol_mod:custom/mitchu_ei",
+  "textures": {
+    "all": "rutielol_mod:blocks/ei",
+    "particle": "rutielol_mod:blocks/ei",
+    "0": "rutielol_mod:blocks/ei"
+  }
+}

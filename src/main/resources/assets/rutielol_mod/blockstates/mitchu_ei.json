@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "rutielol_mod:block/mitchu_ei"
+    },
+    "facing=east": {
+      "model": "rutielol_mod:block/mitchu_ei",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "rutielol_mod:block/mitchu_ei",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "rutielol_mod:block/mitchu_ei",
+      "y": 270
+    }
+  }
+}
