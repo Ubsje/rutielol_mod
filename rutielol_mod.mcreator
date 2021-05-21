@@ -1,14 +1,185 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "RadiatieParticle",
+      "type": "particle",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiatie_particle",
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "RadiatieEffectOnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiatie_effect_on_potion_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "RadiatieEffect",
+      "type": "potion",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiatie_effect",
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "RadioactieveKatOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radioactieve_kat_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "RadioactieveKat",
+      "type": "mob",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radioactieve_kat",
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "MitchuOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mitchu_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mitchu"
+    },
+    {
+      "name": "Mitchu",
+      "type": "mob",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mitchu",
+      "path": "~/Mitchu"
+    }
+  ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "mitchu_ambient",
+      "files": [
+        "mitchuambient1",
+        "mitchuambient2",
+        "mitchuambient3"
+      ],
+      "category": "neutral",
+      "subtitle": "Mitchu prrr"
+    },
+    {
+      "name": "mitchu_hurt",
+      "files": [
+        "mitchuhurt1",
+        "mitchuhurt2",
+        "mitchuhurt3"
+      ],
+      "category": "neutral",
+      "subtitle": "Mitchu heeft pijn"
+    },
+    {
+      "name": "mitchu_death",
+      "files": [
+        "mitchudeath1"
+      ],
+      "category": "neutral",
+      "subtitle": "Mitchu sterft"
+    }
+  ],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.rutielol_mod.radioactieve_kat_spawn_egg": "Radioactieve Kat Spawn Egg",
+      "entity.rutielol_mod.radioactieve_kat": "Radioactieve Kat",
+      "subtitles.mitchu_death": "Mitchu sterft",
+      "effect.radiatie_effect": "Radiatie",
+      "subtitles.mitchu_hurt": "Mitchu heeft pijn",
+      "item.rutielol_mod.mitchu_spawn_egg": "Mitchu Spawn Egg",
+      "item.minecraft.potion.effect.radiatie_effect": "Radiatie",
+      "item.minecraft.splash_potion.effect.radiatie_effect": "Splash Radiatie",
+      "subtitles.mitchu_ambient": "Mitchu prrr",
+      "death.attack.radiation": "%1$s is doodgeradieerd",
+      "item.minecraft.lingering_potion.effect.radiatie_effect": "Lingering Radiatie",
+      "item.minecraft.tipped_arrow.effect.radiatie_effect": "Arrow of Radiatie",
+      "entity.rutielol_mod.mitchu": "Mitchu"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Radiatie",
+        "children": []
+      },
+      {
+        "name": "Mitchu",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "rutielol_mod",

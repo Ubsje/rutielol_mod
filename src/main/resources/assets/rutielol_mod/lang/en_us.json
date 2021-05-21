@@ -1,1 +1,15 @@
-{}
+{
+  "item.rutielol_mod.radioactieve_kat_spawn_egg": "Radioactieve Kat Spawn Egg",
+  "entity.rutielol_mod.radioactieve_kat": "Radioactieve Kat",
+  "subtitles.mitchu_death": "Mitchu sterft",
+  "effect.radiatie_effect": "Radiatie",
+  "subtitles.mitchu_hurt": "Mitchu heeft pijn",
+  "item.rutielol_mod.mitchu_spawn_egg": "Mitchu Spawn Egg",
+  "item.minecraft.potion.effect.radiatie_effect": "Radiatie",
+  "item.minecraft.splash_potion.effect.radiatie_effect": "Splash Radiatie",
+  "subtitles.mitchu_ambient": "Mitchu prrr",
+  "death.attack.radiation": "%1$s is doodgeradieerd",
+  "item.minecraft.lingering_potion.effect.radiatie_effect": "Lingering Radiatie",
+  "item.minecraft.tipped_arrow.effect.radiatie_effect": "Arrow of Radiatie",
+  "entity.rutielol_mod.mitchu": "Mitchu"
+}
