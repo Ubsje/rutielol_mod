@@ -488,6 +488,46 @@
         ]
       },
       "path": "~/Mitchu"
+    },
+    {
+      "name": "EgelOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "egel_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Egel"
+    },
+    {
+      "name": "Egel",
+      "type": "mob",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "egel",
+      "path": "~/Egel"
     }
   ],
   "variable_elements": [],
@@ -533,34 +573,42 @@
     "en_us": {
       "block.rutielol_mod.mitchu_ei": "Mitchu Ei",
       "block.rutielol_mod.manexhout_wood": "Manexhout Wood",
+      "item.rutielol_mod.egel_spawn_egg": "Egie Egel Spawn Egg",
       "item.rutielol_mod.radioactieve_kat_spawn_egg": "Radioactieve Kat Spawn Egg",
       "entity.rutielol_mod.radioactieve_kat": "Radioactieve Kat",
       "subtitles.mitchu_spawn": "Mitchu ei komt uit",
       "effect.radiatie_effect": "Radiatie",
       "block.rutielol_mod.manexhout_leaves": "Manexhout Leaves",
       "block.rutielol_mod.manexhout_fence": "Manexhout Fence",
+      "entity.rutielol_mod.egel": "Egie Egel",
       "subtitles.mitchu_hurt": "Mitchu heeft pijn",
       "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg",
       "block.rutielol_mod.manex_brick_stairs": "ManexBrick Stairs",
+      "item.rutielol_mod.bewaak_eendman_spawn_egg": "Bewaak Eendman Spawn Egg",
+      "entity.rutielol_mod.bewaak_eendman": "Bewaak Eendman",
       "block.rutielol_mod.manexhout_slab": "Manexhout Slab",
-      "item.minecraft.potion.effect.radiatie_effect": "Potion of Radiatie",
+      "item.minecraft.potion.effect.radiatie_effect": "Radiatie",
       "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
       "entity.rutielol_mod.eendman": "Eendman",
       "block.rutielol_mod.manexhout_planks": "Manexhout Planks",
       "block.rutielol_mod.manexhout_log": "Manexhout Log",
+      "entity.rutielol_mod.eendman_bandiet": "Eendman Bandiet",
       "block.rutielol_mod.manexhout_stairs": "Manexhout Stairs",
       "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
       "biome.rutielol_mod.manexvallei": "Manexvallei",
+      "item.rutielol_mod.eendman_bandiet_spawn_egg": "Eendman Bandiet Spawn Egg",
+      "item.rutielol_mod.baby_mitchu_spawn_egg": "Baby Mitchu Spawn Egg",
       "subtitles.mitchu_death": "Mitchu sterft",
       "block.rutielol_mod.manex_brick_slab": "ManexBrick Slab",
       "item.rutielol_mod.mitchu_spawn_egg": "Mitchu Spawn Egg",
-      "item.minecraft.splash_potion.effect.radiatie_effect": "Splash potion of Radiatie",
+      "entity.rutielol_mod.baby_mitchu": "Baby Mitchu",
+      "item.minecraft.splash_potion.effect.radiatie_effect": "Splash Radiatie",
       "item.rutielol_mod.manexiet": "Manexiet",
       "block.rutielol_mod.manexbricks": "Manexbricks",
       "subtitles.mitchu_ambient": "Mitchu prrr",
       "death.attack.radiation": "%1$s is doodgeradieerd",
       "entity.rutielol_mod.planksper": "Planksper",
-      "item.minecraft.lingering_potion.effect.radiatie_effect": "Lingering potion of Radiatie",
+      "item.minecraft.lingering_potion.effect.radiatie_effect": "Lingering Radiatie",
       "item.minecraft.tipped_arrow.effect.radiatie_effect": "Arrow of Radiatie",
       "entity.rutielol_mod.mitchu": "Mitchu",
       "block.rutielol_mod.manexhout_fence_gate": "Manexhout Fence Gate"
@@ -600,6 +648,10 @@
       },
       {
         "name": "Eendman",
+        "children": []
+      },
+      {
+        "name": "Egel",
         "children": []
       }
     ]
