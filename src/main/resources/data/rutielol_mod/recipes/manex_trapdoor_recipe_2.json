@@ -1,0 +1,32 @@
+{
+  "group": "rutielol_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "rutielol_mod:manexhout_fence_gate"
+    },
+    "1": {
+      "item": "rutielol_mod:manexhout_fence_gate"
+    },
+    "2": {
+      "item": "rutielol_mod:manexhout_fence_gate"
+    },
+    "3": {
+      "item": "rutielol_mod:manexhout_fence_gate"
+    },
+    "4": {
+      "item": "rutielol_mod:manexhout_fence_gate"
+    },
+    "5": {
+      "item": "rutielol_mod:manexhout_fence_gate"
+    }
+  },
+  "result": {
+    "item": "rutielol_mod:deleted_mod_element",
+    "count": 2
+  }
+}
