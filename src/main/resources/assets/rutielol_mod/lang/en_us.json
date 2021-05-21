@@ -2,7 +2,10 @@
   "item.rutielol_mod.manexiet": "Manexiet",
   "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
   "entity.rutielol_mod.eendman": "Eendman",
+  "block.rutielol_mod.manex_leaves": "Manex Leaves",
   "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
+  "biome.rutielol_mod.manexvallei": "Manexvallei",
   "entity.rutielol_mod.planksper": "Planksper",
+  "block.rutielol_mod.manex_log": "Manex Log",
   "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg"
 }

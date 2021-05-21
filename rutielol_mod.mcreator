@@ -40,6 +40,46 @@
       "ids": {},
       "registry_name": "manexiet_ore",
       "path": "~/Manexiet"
+    },
+    {
+      "name": "Logs",
+      "type": "tag",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logs",
+      "path": "~/Manex vallei"
+    },
+    {
+      "name": "ManexLog",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_log",
+      "path": "~/Manex vallei"
+    },
+    {
+      "name": "ManexLeaves",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_leaves",
+      "path": "~/Manex vallei"
+    },
+    {
+      "name": "Manexvallei",
+      "type": "biome",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manexvallei",
+      "path": "~/Manex vallei"
     }
   ],
   "variable_elements": [],
@@ -49,8 +89,11 @@
       "item.rutielol_mod.manexiet": "Manexiet",
       "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
       "entity.rutielol_mod.eendman": "Eendman",
+      "block.rutielol_mod.manex_leaves": "Manex Leaves",
       "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
+      "biome.rutielol_mod.manexvallei": "Manexvallei",
       "entity.rutielol_mod.planksper": "Planksper",
+      "block.rutielol_mod.manex_log": "Manex Log",
       "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg"
     }
   },
@@ -67,6 +110,10 @@
       },
       {
         "name": "Manexiet",
+        "children": []
+      },
+      {
+        "name": "Manex vallei",
         "children": []
       }
     ]
