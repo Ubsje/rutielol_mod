@@ -2,6 +2,86 @@
   "id_map": {},
   "mod_elements": [
     {
+      "name": "Eendman",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eendman",
+      "path": "~/Eendman"
+    },
+    {
+      "name": "Planksper",
+      "type": "mob",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "planksper",
+      "path": "~/Planksper"
+    },
+    {
+      "name": "Manexiet",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manexiet",
+      "path": "~/Manexiet"
+    },
+    {
+      "name": "ManexietOre",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manexiet_ore",
+      "path": "~/Manexiet"
+    },
+    {
+      "name": "Manexvallei",
+      "type": "biome",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manexvallei",
+      "path": "~/Manex vallei"
+    },
+    {
+      "name": "ManexLog",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_log",
+      "path": "~/Manex vallei"
+    },
+    {
+      "name": "Logs",
+      "type": "tag",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logs",
+      "path": "~/Manex vallei"
+    },
+    {
+      "name": "ManexLeaves",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_leaves",
+      "path": "~/Manex vallei"
+    },
+    {
       "name": "RadiatieEffect",
       "type": "potion",
       "sortid": 2,
@@ -118,46 +198,6 @@
         ]
       },
       "path": "~/Radiatie"
-    },
-    {
-      "name": "Eendman",
-      "type": "mob",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "eendman",
-      "path": "~/Eendman"
-    },
-    {
-      "name": "Planksper",
-      "type": "mob",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "planksper",
-      "path": "~/Planksper"
-    },
-    {
-      "name": "Manexiet",
-      "type": "item",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "manexiet",
-      "path": "~/Manexiet"
-    },
-    {
-      "name": "ManexietOre",
-      "type": "block",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "manexiet_ore",
-      "path": "~/Manexiet"
     }
   ],
   "variable_elements": [],
@@ -227,6 +267,10 @@
       },
       {
         "name": "Manexiet",
+        "children": []
+      },
+      {
+        "name": "Manex vallei",
         "children": []
       },
       {
