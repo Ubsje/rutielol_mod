@@ -1,12 +1,14 @@
 {
   "block.rutielol_mod.mitchu_ei": "Mitchu Ei",
   "block.rutielol_mod.manexhout_wood": "Manexhout Wood",
+  "item.rutielol_mod.egel_spawn_egg": "Egie Egel Spawn Egg",
   "item.rutielol_mod.radioactieve_kat_spawn_egg": "Radioactieve Kat Spawn Egg",
   "entity.rutielol_mod.radioactieve_kat": "Radioactieve Kat",
   "subtitles.mitchu_spawn": "Mitchu ei komt uit",
   "effect.radiatie_effect": "Radiatie",
   "block.rutielol_mod.manexhout_leaves": "Manexhout Leaves",
   "block.rutielol_mod.manexhout_fence": "Manexhout Fence",
+  "entity.rutielol_mod.egel": "Egie Egel",
   "subtitles.mitchu_hurt": "Mitchu heeft pijn",
   "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg",
   "block.rutielol_mod.manex_brick_stairs": "ManexBrick Stairs",
@@ -34,10 +36,12 @@
   "item.rutielol_mod.manexiet": "Manexiet",
   "block.rutielol_mod.manexbricks": "Manexbricks",
   "subtitles.mitchu_ambient": "Mitchu prrr",
+  "itemGroup.tabrutie_lol_mod": "rutielol mod",
   "death.attack.radiation": "%1$s is doodgeradieerd",
   "entity.rutielol_mod.planksper": "Planksper",
   "item.minecraft.lingering_potion.effect.radiatie_effect": "Lingering Radiatie",
   "item.minecraft.tipped_arrow.effect.radiatie_effect": "Arrow of Radiatie",
   "entity.rutielol_mod.mitchu": "Mitchu",
-  "block.rutielol_mod.manexhout_fence_gate": "Manexhout Fence Gate"
+  "block.rutielol_mod.manexhout_fence_gate": "Manexhout Fence Gate",
+  "death.attack.egel": "%1$s is doodgeprikt door Egie Egel"
 }

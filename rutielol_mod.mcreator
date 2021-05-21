@@ -588,6 +588,15 @@
       "ids": {},
       "registry_name": "manex_hout_door",
       "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "RutieLolMod",
+      "type": "tab",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rutie_lol_mod"
     }
   ],
   "variable_elements": [],
@@ -668,6 +677,7 @@
       "item.rutielol_mod.manexiet": "Manexiet",
       "block.rutielol_mod.manexbricks": "Manexbricks",
       "subtitles.mitchu_ambient": "Mitchu prrr",
+      "itemGroup.tabrutie_lol_mod": "rutielol mod",
       "death.attack.radiation": "%1$s is doodgeradieerd",
       "entity.rutielol_mod.planksper": "Planksper",
       "item.minecraft.lingering_potion.effect.radiatie_effect": "Lingering Radiatie",
