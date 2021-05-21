@@ -3,7 +3,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "rutielol_mod:manexhout_wood"
+      "item": "rutielol_mod:manexhout_log"
     }
   ],
   "result": {
