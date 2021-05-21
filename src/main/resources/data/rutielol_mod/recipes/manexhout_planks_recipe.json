@@ -1,0 +1,13 @@
+{
+  "group": "rutielol_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:manexhout_log"
+    }
+  ],
+  "result": {
+    "item": "rutielol_mod:manexhout_planks",
+    "count": 4
+  }
+}

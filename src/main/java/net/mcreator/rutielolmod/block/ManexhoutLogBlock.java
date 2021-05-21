@@ -2,6 +2,8 @@
 package net.mcreator.rutielolmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.ToolType;
+import net.minecraftforge.common.IPlantable;
 
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
@@ -13,7 +15,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -23,11 +24,11 @@ import java.util.List;
 import java.util.Collections;
 
 @RutielolModModElements.ModElement.Tag
-public class ManexLeavesBlock extends RutielolModModElements.ModElement {
-	@ObjectHolder("rutielol_mod:manex_leaves")
+public class ManexhoutLogBlock extends RutielolModModElements.ModElement {
+	@ObjectHolder("rutielol_mod:manexhout_log")
 	public static final Block block = null;
-	public ManexLeavesBlock(RutielolModModElements instance) {
-		super(instance, 7);
+	public ManexhoutLogBlock(RutielolModModElements instance) {
+		super(instance, 11);
 	}
 
 	@Override
@@ -36,15 +37,21 @@ public class ManexLeavesBlock extends RutielolModModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends LeavesBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid());
-			setRegistryName("manex_leaves");
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 2f).setLightLevel(s -> 0).harvestLevel(0)
+					.harvestTool(ToolType.AXE).setRequiresTool());
+			setRegistryName("manexhout_log");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 1;
+			return 5;
+		}
+
+		@Override
+		public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction direction, IPlantable plantable) {
+			return true;
 		}
 
 		@Override

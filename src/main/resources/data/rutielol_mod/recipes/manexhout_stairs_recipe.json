@@ -1,0 +1,33 @@
+{
+  "group": "rutielol_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "rutielol_mod:manexhout_planks"
+    },
+    "3": {
+      "item": "rutielol_mod:manexhout_planks"
+    },
+    "4": {
+      "item": "rutielol_mod:manexhout_planks"
+    },
+    "6": {
+      "item": "rutielol_mod:manexhout_planks"
+    },
+    "7": {
+      "item": "rutielol_mod:manexhout_planks"
+    },
+    "8": {
+      "item": "rutielol_mod:manexhout_planks"
+    }
+  },
+  "result": {
+    "item": "rutielol_mod:manexhout_stairs",
+    "count": 4
+  }
+}

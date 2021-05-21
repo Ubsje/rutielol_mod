@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "rutielol_mod:block/manexhout_slab"
+    },
+    "type=top": {
+      "model": "rutielol_mod:block/manexhout_slab_top"
+    },
+    "type=double": {
+      "model": "rutielol_mod:block/manexhout_slab_full"
+    }
+  }
+}

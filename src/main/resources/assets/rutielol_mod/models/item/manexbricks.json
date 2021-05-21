@@ -1,5 +1,5 @@
 {
-  "parent": "rutielol_mod:block/manex_log",
+  "parent": "rutielol_mod:block/manexbricks",
   "display": {
     "thirdperson": {
       "rotation": [

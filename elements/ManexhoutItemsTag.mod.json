@@ -1,0 +1,20 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ManexhoutWood"
+      },
+      {
+        "value": "CUSTOM:ManexhoutLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "manexhout_log",
+    "namespace": "forge"
+  }
+}

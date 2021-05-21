@@ -34,8 +34,8 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.rutielolmod.entity.EendmanEntity;
-import net.mcreator.rutielolmod.block.ManexLogBlock;
-import net.mcreator.rutielolmod.block.ManexLeavesBlock;
+import net.mcreator.rutielolmod.block.ManexhoutLogBlock;
+import net.mcreator.rutielolmod.block.ManexhoutLeavesBlock;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
 @RutielolModModElements.ModElement.Tag
@@ -55,8 +55,8 @@ public class ManexvalleiBiome extends RutielolModModElements.ModElement {
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
 								Blocks.STONE.getDefaultState(), Blocks.STONE.getDefaultState())));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(ManexLogBlock.block.getDefaultState()),
-								new SimpleBlockStateProvider(ManexLeavesBlock.block.getDefaultState()),
+						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(ManexhoutLogBlock.block.getDefaultState()),
+								new SimpleBlockStateProvider(ManexhoutLeavesBlock.block.getDefaultState()),
 								new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
 								new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1))).setIgnoreVines().setMaxWaterDepth(0).build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)

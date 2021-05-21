@@ -64,10 +64,10 @@
     "minHeight": 7,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "CUSTOM:ManexLog"
+      "value": "CUSTOM:ManexhoutLog"
     },
     "treeBranch": {
-      "value": "CUSTOM:ManexLeaves"
+      "value": "CUSTOM:ManexhoutLeaves"
     },
     "treeVines": {
       "value": ""

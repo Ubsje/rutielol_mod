@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "rutielol_mod:blocks/manexhout_planks",
+    "top": "rutielol_mod:blocks/manexhout_planks",
+    "side": "rutielol_mod:blocks/manexhout_planks"
+  }
+}

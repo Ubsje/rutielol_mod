@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rutielol_mod:blocks/manexbricks",
+    "up": "rutielol_mod:blocks/manexbricks",
+    "north": "rutielol_mod:blocks/manexbricks",
+    "east": "rutielol_mod:blocks/manexbricks",
+    "south": "rutielol_mod:blocks/manexbricks",
+    "west": "rutielol_mod:blocks/manexbricks",
+    "particle": "rutielol_mod:blocks/manexbricks"
+  }
+}
