@@ -14,7 +14,7 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.rutielolmod.entity.MitchuEntity;
+import net.mcreator.rutielolmod.entity.BabyMitchuEntity;
 import net.mcreator.rutielolmod.RutielolModModElements;
 import net.mcreator.rutielolmod.RutielolModMod;
 
@@ -52,10 +52,20 @@ public class MitchuEiBlockDestroyedByPlayerProcedure extends RutielolModModEleme
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new MitchuEntity.CustomEntity(MitchuEntity.entity, (World) world);
+			Entity entityToSpawn = new BabyMitchuEntity.CustomEntity(BabyMitchuEntity.entity, (World) world);
 			entityToSpawn.setLocationAndAngles((x + 0.5), y, (z + 0.5), (float) 0, (float) 0);
 			entityToSpawn.setRenderYawOffset((float) 0);
-			entityToSpawn.setMotion(0, 0.5, 0);
+			entityToSpawn.setMotion(0.1, 0.4, 0);
+			if (entityToSpawn instanceof MobEntity)
+				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+			world.addEntity(entityToSpawn);
+		}
+		if (world instanceof ServerWorld) {
+			Entity entityToSpawn = new BabyMitchuEntity.CustomEntity(BabyMitchuEntity.entity, (World) world);
+			entityToSpawn.setLocationAndAngles((x + 0.5), y, (z + 0.5), (float) 0, (float) 0);
+			entityToSpawn.setRenderYawOffset((float) 0);
+			entityToSpawn.setMotion((-0.1), 0.4, 0);
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);

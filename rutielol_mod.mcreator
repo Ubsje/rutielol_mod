@@ -428,6 +428,46 @@
       "ids": {},
       "registry_name": "mitchu_ei",
       "path": "~/Mitchu"
+    },
+    {
+      "name": "BabyMitchuOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baby_mitchu_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mitchu"
+    },
+    {
+      "name": "BabyMitchu",
+      "type": "mob",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baby_mitchu",
+      "path": "~/Mitchu"
     }
   ],
   "variable_elements": [],
@@ -491,9 +531,11 @@
       "block.rutielol_mod.manexhout_stairs": "Manexhout Stairs",
       "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
       "biome.rutielol_mod.manexvallei": "Manexvallei",
+      "item.rutielol_mod.baby_mitchu_spawn_egg": "Baby Mitchu Spawn Egg",
       "subtitles.mitchu_death": "Mitchu sterft",
       "block.rutielol_mod.manex_brick_slab": "ManexBrick Slab",
       "item.rutielol_mod.mitchu_spawn_egg": "Mitchu Spawn Egg",
+      "entity.rutielol_mod.baby_mitchu": "Baby Mitchu",
       "item.minecraft.splash_potion.effect.radiatie_effect": "Splash potion of Radiatie",
       "item.rutielol_mod.manexiet": "Manexiet",
       "block.rutielol_mod.manexbricks": "Manexbricks",

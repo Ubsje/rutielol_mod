@@ -1,8 +1,14 @@
 package net.mcreator.rutielolmod.procedures;
 
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.vector.Vector2f;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.command.ICommandSource;
+import net.minecraft.command.CommandSource;
 
 import net.mcreator.rutielolmod.RutielolModModElements;
 import net.mcreator.rutielolmod.RutielolModMod;
@@ -42,6 +48,16 @@ public class MitchuOnEntityTickUpdateProcedure extends RutielolModModElements.Mo
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof ServerWorld) {
 			((ServerWorld) world).spawnParticle(ParticleTypes.CLOUD, x, (y + 0.5), z, (int) 3, 0.2, 0.2, 0.2, 0);
+		}
+		if ((Math.random() < 0.01)) {
+			if ((Math.random() < 0.02)) {
+				if (world instanceof ServerWorld) {
+					((World) world).getServer().getCommandManager().handleCommand(
+							new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+									new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
+							"summon falling_block ~ ~ ~ {BlockState:{Name:\"rutielol_mod:mitchu_ei\"},Time:1}");
+				}
+			}
 		}
 	}
 }
