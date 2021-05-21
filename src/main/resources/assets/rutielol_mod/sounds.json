@@ -54,5 +54,25 @@
         "stream": false
       }
     ]
+  },
+  "disc_ikhaatmonsters": {
+    "category": "music",
+    "subtitle": "subtitles.disc_ikhaatmonsters",
+    "sounds": [
+      {
+        "name": "rutielol_mod:ik_haat_monsters_-_barbesspeelt",
+        "stream": true
+      }
+    ]
+  },
+  "disc_poki": {
+    "category": "music",
+    "subtitle": "subtitles.disc_poki",
+    "sounds": [
+      {
+        "name": "rutielol_mod:poki_poki",
+        "stream": true
+      }
+    ]
   }
 }

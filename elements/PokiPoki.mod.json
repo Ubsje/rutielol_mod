@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "pokidisc",
+    "name": "Music Disc",
+    "description": "Poki poki",
+    "creativeTab": {
+      "value": "CUSTOM:RutieLolMod"
+    },
+    "music": {
+      "value": "CUSTOM:disc_poki"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

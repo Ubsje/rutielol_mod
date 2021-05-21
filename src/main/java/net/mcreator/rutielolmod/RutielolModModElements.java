@@ -53,6 +53,10 @@ public class RutielolModModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("rutielol_mod", "mitchu_ambient")));
 		sounds.put(new ResourceLocation("rutielol_mod", "mitchu_spawn"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("rutielol_mod", "mitchu_spawn")));
+		sounds.put(new ResourceLocation("rutielol_mod", "disc_ikhaatmonsters"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("rutielol_mod", "disc_ikhaatmonsters")));
+		sounds.put(new ResourceLocation("rutielol_mod", "disc_poki"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("rutielol_mod", "disc_poki")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("rutielol_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
