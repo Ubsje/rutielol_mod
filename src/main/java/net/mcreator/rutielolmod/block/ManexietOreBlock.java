@@ -113,7 +113,7 @@ public class ManexietOreBlock extends RutielolModModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(64)
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 1)).range(10)
 					.square().func_242731_b(10);
 			event.getRegistry().register(feature.setRegistryName("manexiet_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("rutielol_mod:manexiet_ore"), configuredFeature);
