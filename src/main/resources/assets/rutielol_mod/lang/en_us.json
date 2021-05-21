@@ -1,1 +1,6 @@
-{}
+{
+  "entity.rutielol_mod.eendman": "Eendman",
+  "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
+  "entity.rutielol_mod.planksper": "Planksper",
+  "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg"
+}

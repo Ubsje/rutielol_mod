@@ -1,14 +1,49 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Eendman",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eendman",
+      "path": "~/Eendman"
+    },
+    {
+      "name": "Planksper",
+      "type": "mob",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "planksper",
+      "path": "~/Planksper"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "entity.rutielol_mod.eendman": "Eendman",
+      "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
+      "entity.rutielol_mod.planksper": "Planksper",
+      "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Eendman",
+        "children": []
+      },
+      {
+        "name": "Planksper",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "rutielol_mod",
