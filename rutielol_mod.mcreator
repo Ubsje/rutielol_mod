@@ -20,12 +20,34 @@
       "ids": {},
       "registry_name": "planksper",
       "path": "~/Planksper"
+    },
+    {
+      "name": "Manexiet",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manexiet",
+      "path": "~/Manexiet"
+    },
+    {
+      "name": "ManexietOre",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manexiet_ore",
+      "path": "~/Manexiet"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.rutielol_mod.manexiet": "Manexiet",
+      "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
       "entity.rutielol_mod.eendman": "Eendman",
       "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
       "entity.rutielol_mod.planksper": "Planksper",
@@ -41,6 +63,10 @@
       },
       {
         "name": "Planksper",
+        "children": []
+      },
+      {
+        "name": "Manexiet",
         "children": []
       }
     ]

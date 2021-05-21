@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rutielol_mod:blocks/manexiet_ore",
+    "up": "rutielol_mod:blocks/manexiet_ore",
+    "north": "rutielol_mod:blocks/manexiet_ore",
+    "east": "rutielol_mod:blocks/manexiet_ore",
+    "south": "rutielol_mod:blocks/manexiet_ore",
+    "west": "rutielol_mod:blocks/manexiet_ore",
+    "particle": "rutielol_mod:blocks/manexiet_ore"
+  }
+}
