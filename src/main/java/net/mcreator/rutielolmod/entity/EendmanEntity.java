@@ -61,7 +61,12 @@ public class EendmanEntity extends RutielolModModElements.ModElement {
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 15, 4, 4));
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("rutielol_mod:manexvallei").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
+		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 8, 1, 4));
 	}
 
 	@Override

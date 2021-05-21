@@ -6,7 +6,10 @@
     "items": [],
     "blocks": [
       {
-        "value": "CUSTOM:ManexLog"
+        "value": "CUSTOM:ManexhoutLog"
+      },
+      {
+        "value": "CUSTOM:ManexhoutWood"
       }
     ],
     "functions": [],

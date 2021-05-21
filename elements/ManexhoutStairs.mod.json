@@ -2,10 +2,10 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "manexhout_planks",
-    "textureTop": "manexhout_planks",
+    "texture": "manexplanks",
+    "textureTop": "manexplanks",
     "textureLeft": "",
-    "textureFront": "manexhout_planks",
+    "textureFront": "manexplanks",
     "textureRight": "",
     "textureBack": "",
     "renderType": 10,

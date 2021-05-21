@@ -1,0 +1,33 @@
+{
+  "group": "rutielol_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "rutielol_mod:manexbricks"
+    },
+    "3": {
+      "item": "rutielol_mod:manexbricks"
+    },
+    "4": {
+      "item": "rutielol_mod:manexbricks"
+    },
+    "6": {
+      "item": "rutielol_mod:manexbricks"
+    },
+    "7": {
+      "item": "rutielol_mod:manexbricks"
+    },
+    "8": {
+      "item": "rutielol_mod:manexbricks"
+    }
+  },
+  "result": {
+    "item": "rutielol_mod:manex_brick_stairs",
+    "count": 4
+  }
+}

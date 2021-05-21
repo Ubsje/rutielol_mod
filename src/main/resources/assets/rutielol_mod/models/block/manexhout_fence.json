@@ -1,7 +1,7 @@
 {
   "parent": "block/fence_side",
   "textures": {
-    "texture": "rutielol_mod:blocks/manexhout_planks",
-    "particle": "rutielol_mod:blocks/manexhout_planks"
+    "texture": "rutielol_mod:blocks/manexplanks",
+    "particle": "rutielol_mod:blocks/manexplanks"
   }
 }

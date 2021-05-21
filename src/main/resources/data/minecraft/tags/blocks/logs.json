@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "rutielol_mod:manex_log"
+    "rutielol_mod:manexhout_log",
+    "rutielol_mod:manexhout_wood"
   ]
 }

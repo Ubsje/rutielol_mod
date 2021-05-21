@@ -1,0 +1,22 @@
+{
+  "group": "rutielol_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "rutielol_mod:manexbricks"
+    },
+    "1": {
+      "item": "rutielol_mod:manexbricks"
+    },
+    "2": {
+      "item": "rutielol_mod:manexbricks"
+    }
+  },
+  "result": {
+    "item": "rutielol_mod:manex_brick_slab",
+    "count": 6
+  }
+}

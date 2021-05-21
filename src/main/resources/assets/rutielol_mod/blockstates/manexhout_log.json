@@ -1,7 +1,28 @@
 {
   "variants": {
-    "": {
+    "facing=south": {
       "model": "rutielol_mod:block/manexhout_log"
+    },
+    "facing=north": {
+      "model": "rutielol_mod:block/manexhout_log"
+    },
+    "facing=east": {
+      "model": "rutielol_mod:block/manexhout_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "rutielol_mod:block/manexhout_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "rutielol_mod:block/manexhout_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "rutielol_mod:block/manexhout_log",
+      "x": 90,
+      "y": 90
     }
   }
 }

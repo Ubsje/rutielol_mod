@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "rutielol_mod:blocks/manexhout_planks",
-    "particle": "rutielol_mod:blocks/manexhout_planks"
+    "all": "rutielol_mod:blocks/manexplanks",
+    "particle": "rutielol_mod:blocks/manexplanks"
   }
 }

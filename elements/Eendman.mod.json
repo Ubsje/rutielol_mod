@@ -111,11 +111,15 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 15,
+    "spawningProbability": 8,
     "mobSpawningType": "creature",
-    "minNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Manexvallei"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

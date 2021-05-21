@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "rutielol_mod:blocks/manexbricks",
+    "top": "rutielol_mod:blocks/manexbricks",
+    "side": "rutielol_mod:blocks/manexbricks"
+  }
+}

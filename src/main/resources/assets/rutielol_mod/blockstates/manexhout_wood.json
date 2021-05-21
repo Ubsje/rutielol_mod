@@ -1,7 +1,28 @@
 {
   "variants": {
-    "": {
+    "facing=south": {
       "model": "rutielol_mod:block/manexhout_wood"
+    },
+    "facing=north": {
+      "model": "rutielol_mod:block/manexhout_wood"
+    },
+    "facing=east": {
+      "model": "rutielol_mod:block/manexhout_wood",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "rutielol_mod:block/manexhout_wood",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "rutielol_mod:block/manexhout_wood",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "rutielol_mod:block/manexhout_wood",
+      "x": 90,
+      "y": 90
     }
   }
 }

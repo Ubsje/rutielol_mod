@@ -59,7 +59,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "logs",
-      "path": "~/Manex vallei"
+      "path": "~/Manex vallei/Manexhout"
     },
     {
       "name": "RadiatieEffect",
@@ -187,7 +187,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "manexbricks",
-      "path": "~/Manex vallei"
+      "path": "~/Manex vallei/ManexBricks"
     },
     {
       "name": "ManexhoutWood",
@@ -270,16 +270,6 @@
       "path": "~/Manex vallei/Manexhout"
     },
     {
-      "name": "ManexhoutItemsTag",
-      "type": "tag",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "manexhout_items_tag",
-      "path": "~/Manex vallei/Manexhout"
-    },
-    {
       "name": "ManexhoutWoodRecipe",
       "type": "recipe",
       "sortid": 19,
@@ -348,6 +338,46 @@
       "ids": {},
       "registry_name": "manexhout_stick_recipe",
       "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "ManexBrickStairs",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_brick_stairs",
+      "path": "~/Manex vallei/ManexBricks"
+    },
+    {
+      "name": "ManexBrickSlab",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_brick_slab",
+      "path": "~/Manex vallei/ManexBricks"
+    },
+    {
+      "name": "ManexBrickStairsRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_brick_stairs_recipe",
+      "path": "~/Manex vallei/ManexBricks"
+    },
+    {
+      "name": "ManexBrickSlabRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_brick_slab_recipe",
+      "path": "~/Manex vallei/ManexBricks"
     }
   ],
   "variable_elements": [],
@@ -391,16 +421,18 @@
       "block.rutielol_mod.manexhout_fence": "Manexhout Fence",
       "subtitles.mitchu_hurt": "Mitchu heeft pijn",
       "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg",
+      "block.rutielol_mod.manex_brick_stairs": "ManexBrick Stairs",
       "block.rutielol_mod.manexhout_slab": "Manexhout Slab",
       "item.minecraft.potion.effect.radiatie_effect": "Potion of Radiatie",
       "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
       "entity.rutielol_mod.eendman": "Eendman",
-      "block.rutielol_mod.manexhout_log": "Manexhout Log",
       "block.rutielol_mod.manexhout_planks": "Manexhout Planks",
+      "block.rutielol_mod.manexhout_log": "Manexhout Log",
       "block.rutielol_mod.manexhout_stairs": "Manexhout Stairs",
       "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
       "biome.rutielol_mod.manexvallei": "Manexvallei",
       "subtitles.mitchu_death": "Mitchu sterft",
+      "block.rutielol_mod.manex_brick_slab": "ManexBrick Slab",
       "item.rutielol_mod.mitchu_spawn_egg": "Mitchu Spawn Egg",
       "item.minecraft.splash_potion.effect.radiatie_effect": "Splash potion of Radiatie",
       "item.rutielol_mod.manexiet": "Manexiet",
@@ -434,6 +466,10 @@
         "children": [
           {
             "name": "Manexhout",
+            "children": []
+          },
+          {
+            "name": "ManexBricks",
             "children": []
           }
         ]

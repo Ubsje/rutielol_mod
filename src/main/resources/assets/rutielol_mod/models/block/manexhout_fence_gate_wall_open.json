@@ -1,6 +1,6 @@
 {
   "parent": "block/template_fence_gate_wall_open",
   "textures": {
-    "texture": "rutielol_mod:blocks/manexhout_planks"
+    "texture": "rutielol_mod:blocks/manexplanks"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "rutielol_mod:blocks/manexbricks",
+    "top": "rutielol_mod:blocks/manexbricks",
+    "side": "rutielol_mod:blocks/manexbricks"
+  }
+}

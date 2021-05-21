@@ -2,10 +2,10 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "manexleaves",
-    "textureTop": "",
+    "texture": "manexbricks",
+    "textureTop": "manexbricks",
     "textureLeft": "",
-    "textureFront": "",
+    "textureFront": "manexbricks",
     "textureRight": "",
     "textureBack": "",
     "renderType": 10,
@@ -15,7 +15,7 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Leaves",
+    "blockBase": "Stairs",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Manexhout Leaves",
+    "name": "ManexBrick Stairs",
     "specialInfo": [],
-    "hardness": 0.2,
-    "resistance": 0.2,
+    "hardness": 3.0,
+    "resistance": 2.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -53,7 +53,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "LEAVES"
+      "value": "WOOD"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -64,7 +64,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 30,
+    "flammability": 5,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -73,7 +73,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "WOOD"
     },
     "luminance": 0,
     "unbreakable": false,
