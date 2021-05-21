@@ -588,6 +588,16 @@
       "ids": {},
       "registry_name": "manex_hout_door",
       "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "CraftingTableManexhout",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crafting_table_manexhout",
+      "path": "~/Manex vallei/Manexhout"
     }
   ],
   "variable_elements": [],

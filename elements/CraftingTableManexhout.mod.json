@@ -5,14 +5,11 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 3,
+    "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
-      },
-      {
         "value": "CUSTOM:ManexhoutPlanks"
       },
       {
@@ -31,16 +28,19 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:ManexhoutPlanks"
+        "value": ""
       },
       {
-        "value": "CUSTOM:ManexhoutPlanks"
+        "value": ""
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:ManexHoutDoor"
+      "value": "Blocks.CRAFTING_TABLE"
     },
-    "name": "manex_door_recipe_2",
+    "name": "crafting_table_manexhout",
     "namespace": "mod"
   }
 }
