@@ -42,13 +42,13 @@
       "path": "~/Manexiet"
     },
     {
-      "name": "Logs",
-      "type": "tag",
-      "sortid": 5,
+      "name": "Manexvallei",
+      "type": "biome",
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "logs",
+      "registry_name": "manexvallei",
       "path": "~/Manex vallei"
     },
     {
@@ -62,6 +62,16 @@
       "path": "~/Manex vallei"
     },
     {
+      "name": "Logs",
+      "type": "tag",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logs",
+      "path": "~/Manex vallei"
+    },
+    {
       "name": "ManexLeaves",
       "type": "block",
       "sortid": 7,
@@ -72,36 +82,175 @@
       "path": "~/Manex vallei"
     },
     {
-      "name": "Manexvallei",
-      "type": "biome",
-      "sortid": 8,
+      "name": "RadiatieEffect",
+      "type": "potion",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "manexvallei",
-      "path": "~/Manex vallei"
+      "registry_name": "radiatie_effect",
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "RadioactieveKat",
+      "type": "mob",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radioactieve_kat",
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "RadiatieParticle",
+      "type": "particle",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiatie_particle",
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "RadioactieveKatOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radioactieve_kat_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "MitchuOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mitchu_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mitchu"
+    },
+    {
+      "name": "Mitchu",
+      "type": "mob",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mitchu",
+      "path": "~/Mitchu"
+    },
+    {
+      "name": "RadiatieEffectOnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiatie_effect_on_potion_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Radiatie"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "mitchu_death",
+      "files": [
+        "mitchudeath1"
+      ],
+      "category": "neutral",
+      "subtitle": "Mitchu sterft"
+    },
+    {
+      "name": "mitchu_hurt",
+      "files": [
+        "mitchuhurt1",
+        "mitchuhurt2",
+        "mitchuhurt3"
+      ],
+      "category": "neutral",
+      "subtitle": "Mitchu heeft pijn"
+    },
+    {
+      "name": "mitchu_ambient",
+      "files": [
+        "mitchuambient1",
+        "mitchuambient2",
+        "mitchuambient3"
+      ],
+      "category": "neutral",
+      "subtitle": "Mitchu prrr"
+    }
+  ],
   "language_map": {
     "en_us": {
-      "item.rutielol_mod.manexiet": "Manexiet",
-      "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
-      "entity.rutielol_mod.eendman": "Eendman",
-      "block.rutielol_mod.manex_leaves": "Manex Leaves",
-      "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
-      "biome.rutielol_mod.manexvallei": "Manexvallei",
-      "entity.rutielol_mod.planksper": "Planksper",
-      "block.rutielol_mod.manex_log": "Manex Log",
-      "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg"
+      "item.minecraft.potion.effect.radiatie_effect": "Radiatie",
+      "item.minecraft.splash_potion.effect.radiatie_effect": "Splash Radiatie",
+      "item.rutielol_mod.radioactieve_kat_spawn_egg": "Radioactieve Kat Spawn Egg",
+      "entity.rutielol_mod.radioactieve_kat": "Radioactieve Kat",
+      "subtitles.mitchu_ambient": "Mitchu prrr",
+      "subtitles.mitchu_death": "Mitchu sterft",
+      "effect.radiatie_effect": "Radiatie",
+      "death.attack.radiation": "%1$s is doodgeradieerd",
+      "subtitles.mitchu_hurt": "Mitchu heeft pijn",
+      "item.minecraft.lingering_potion.effect.radiatie_effect": "Lingering Radiatie",
+      "item.minecraft.tipped_arrow.effect.radiatie_effect": "Arrow of Radiatie"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
-        "name": "Eendman",
+        "name": "Mitchu",
         "children": []
       },
       {
@@ -114,6 +263,14 @@
       },
       {
         "name": "Manex vallei",
+        "children": []
+      },
+      {
+        "name": "Radiatie",
+        "children": []
+      },
+      {
+        "name": "Eendman",
         "children": []
       }
     ]

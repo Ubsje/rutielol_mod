@@ -1,19 +1,19 @@
 package net.mcreator.rutielolmod.entity.renderer;
 
 @OnlyIn(Dist.CLIENT)
-public class PlanksperRenderer {
+public class MitchuRenderer {
 
 	public static class ModelRegisterHandler {
 
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
-			RenderingRegistry.registerEntityRenderingHandler(PlanksperEntity.entity, renderManager -> {
-				return new MobRenderer(renderManager, new Modelplanksper(), 0.2f) {
+			RenderingRegistry.registerEntityRenderingHandler(MitchuEntity.entity, renderManager -> {
+				return new MobRenderer(renderManager, new Modelfull_block(), 1f) {
 
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("rutielol_mod:textures/texture_1_1.png");
+						return new ResourceLocation("rutielol_mod:textures/mitchu_texture.png");
 					}
 				};
 			});
@@ -25,24 +25,16 @@ public class PlanksperRenderer {
 	// Exported for Minecraft version 1.15 - 1.16
 	// Paste this class into your mod and generate all required imports
 
-	public static class Modelplanksper extends EntityModel<Entity> {
+	public static class Modelfull_block extends EntityModel<Entity> {
 		private final ModelRenderer bone;
 
-		public Modelplanksper() {
-			textureWidth = 32;
-			textureHeight = 32;
+		public Modelfull_block() {
+			textureWidth = 64;
+			textureHeight = 64;
 
 			bone = new ModelRenderer(this);
 			bone.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bone.setTextureOffset(0, 0).addBox(-6.0F, -2.0F, -1.0F, 13.0F, 2.0F, 3.0F, 0.0F, false);
-			bone.setTextureOffset(0, 5).addBox(-8.0F, -1.0F, -1.0F, 2.0F, 1.0F, 3.0F, 0.0F, false);
-			bone.setTextureOffset(0, 9).addBox(-4.0F, -3.0F, -1.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			bone.setTextureOffset(7, 5).addBox(-4.0F, -3.0F, 1.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		}
-
-		@Override
-		public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-			// previously the render function, render code was moved to a method below
+			bone.setTextureOffset(0, 0).addBox(-8.0F, -16.0F, -8.0F, 16.0F, 16.0F, 16.0F, 0.0F, false);
 		}
 
 		@Override
@@ -55,6 +47,10 @@ public class PlanksperRenderer {
 			modelRenderer.rotateAngleX = x;
 			modelRenderer.rotateAngleY = y;
 			modelRenderer.rotateAngleZ = z;
+		}
+
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 		}
 	}
 

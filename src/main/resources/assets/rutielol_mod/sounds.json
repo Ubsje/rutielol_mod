@@ -1,1 +1,48 @@
-{}
+{
+  "mitchu_death": {
+    "category": "neutral",
+    "subtitle": "subtitles.mitchu_death",
+    "sounds": [
+      {
+        "name": "rutielol_mod:mitchudeath1",
+        "stream": false
+      }
+    ]
+  },
+  "mitchu_hurt": {
+    "category": "neutral",
+    "subtitle": "subtitles.mitchu_hurt",
+    "sounds": [
+      {
+        "name": "rutielol_mod:mitchuhurt1",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:mitchuhurt2",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:mitchuhurt3",
+        "stream": false
+      }
+    ]
+  },
+  "mitchu_ambient": {
+    "category": "neutral",
+    "subtitle": "subtitles.mitchu_ambient",
+    "sounds": [
+      {
+        "name": "rutielol_mod:mitchuambient1",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:mitchuambient2",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:mitchuambient3",
+        "stream": false
+      }
+    ]
+  }
+}

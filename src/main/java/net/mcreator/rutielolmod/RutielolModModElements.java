@@ -45,6 +45,12 @@ public class RutielolModModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public RutielolModModElements() {
+		sounds.put(new ResourceLocation("rutielol_mod", "mitchu_death"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("rutielol_mod", "mitchu_death")));
+		sounds.put(new ResourceLocation("rutielol_mod", "mitchu_hurt"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("rutielol_mod", "mitchu_hurt")));
+		sounds.put(new ResourceLocation("rutielol_mod", "mitchu_ambient"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("rutielol_mod", "mitchu_ambient")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("rutielol_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
