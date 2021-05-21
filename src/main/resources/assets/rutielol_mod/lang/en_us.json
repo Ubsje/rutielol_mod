@@ -18,8 +18,10 @@
   "item.minecraft.potion.effect.radiatie_effect": "Radiatie",
   "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
   "entity.rutielol_mod.eendman": "Eendman",
+  "block.rutielol_mod.manex_trapdoor": "Manex Trapdoor",
   "block.rutielol_mod.manexhout_planks": "Manexhout Planks",
   "block.rutielol_mod.manexhout_log": "Manexhout Log",
+  "block.rutielol_mod.manex_hout_door": "Manex Hout Door",
   "entity.rutielol_mod.eendman_bandiet": "Eendman Bandiet",
   "block.rutielol_mod.manexhout_stairs": "Manexhout Stairs",
   "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
@@ -39,5 +41,6 @@
   "item.minecraft.lingering_potion.effect.radiatie_effect": "Lingering Radiatie",
   "item.minecraft.tipped_arrow.effect.radiatie_effect": "Arrow of Radiatie",
   "entity.rutielol_mod.mitchu": "Mitchu",
-  "block.rutielol_mod.manexhout_fence_gate": "Manexhout Fence Gate"
+  "block.rutielol_mod.manexhout_fence_gate": "Manexhout Fence Gate",
+  "death.attack.egel": "%1$s is doodgeprikt door Egie Egel"
 }
