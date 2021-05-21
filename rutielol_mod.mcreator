@@ -607,6 +607,26 @@
       "ids": {},
       "registry_name": "crafting_table_manexhout",
       "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "Kamp1",
+      "type": "structure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kamp_1",
+      "path": "~/Manex vallei/Structures"
+    },
+    {
+      "name": "Kamp2",
+      "type": "structure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kamp_2",
+      "path": "~/Manex vallei/Structures"
     }
   ],
   "variable_elements": [],
@@ -725,6 +745,10 @@
           },
           {
             "name": "Manexhout",
+            "children": []
+          },
+          {
+            "name": "Structures",
             "children": []
           }
         ]
