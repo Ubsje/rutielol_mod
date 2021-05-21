@@ -490,44 +490,44 @@
       "path": "~/Mitchu"
     },
     {
-      "name": "ManexHoutDoor",
-      "type": "block",
+      "name": "Egel",
+      "type": "mob",
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "manex_hout_door",
-      "path": "~/Manex vallei/Manexhout"
+      "registry_name": "egel",
+      "path": "~/Egel"
     },
     {
-      "name": "ManexDoorRecipe",
-      "type": "recipe",
-      "sortid": 43,
+      "name": "EgelOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "manex_door_recipe",
-      "path": "~/Manex vallei/Manexhout"
-    },
-    {
-      "name": "ManexDoorRecipe2",
-      "type": "recipe",
-      "sortid": 44,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "manex_door_recipe_2",
-      "path": "~/Manex vallei/Manexhout"
-    },
-    {
-      "name": "ManexTrapdoor",
-      "type": "block",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "manex_trapdoor",
-      "path": "~/Manex vallei/Manexhout"
+      "registry_name": "egel_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Egel"
     },
     {
       "name": "ManexTrapdoorRecipe",
@@ -547,6 +547,46 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "manex_trapdoor_recipe_2",
+      "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "ManexDoorRecipe2",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_door_recipe_2",
+      "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "ManexDoorRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_door_recipe",
+      "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "ManexTrapdoor",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_trapdoor",
+      "path": "~/Manex vallei/Manexhout"
+    },
+    {
+      "name": "ManexHoutDoor",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_hout_door",
       "path": "~/Manex vallei/Manexhout"
     }
   ],
@@ -593,12 +633,14 @@
     "en_us": {
       "block.rutielol_mod.mitchu_ei": "Mitchu Ei",
       "block.rutielol_mod.manexhout_wood": "Manexhout Wood",
+      "item.rutielol_mod.egel_spawn_egg": "Egie Egel Spawn Egg",
       "item.rutielol_mod.radioactieve_kat_spawn_egg": "Radioactieve Kat Spawn Egg",
       "entity.rutielol_mod.radioactieve_kat": "Radioactieve Kat",
       "subtitles.mitchu_spawn": "Mitchu ei komt uit",
       "effect.radiatie_effect": "Radiatie",
       "block.rutielol_mod.manexhout_leaves": "Manexhout Leaves",
       "block.rutielol_mod.manexhout_fence": "Manexhout Fence",
+      "entity.rutielol_mod.egel": "Egie Egel",
       "subtitles.mitchu_hurt": "Mitchu heeft pijn",
       "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg",
       "block.rutielol_mod.manex_brick_stairs": "ManexBrick Stairs",
@@ -631,7 +673,8 @@
       "item.minecraft.lingering_potion.effect.radiatie_effect": "Lingering Radiatie",
       "item.minecraft.tipped_arrow.effect.radiatie_effect": "Arrow of Radiatie",
       "entity.rutielol_mod.mitchu": "Mitchu",
-      "block.rutielol_mod.manexhout_fence_gate": "Manexhout Fence Gate"
+      "block.rutielol_mod.manexhout_fence_gate": "Manexhout Fence Gate",
+      "death.attack.egel": "%1$s is doodgeprikt door Egie Egel"
     }
   },
   "foldersRoot": {
@@ -643,6 +686,10 @@
       },
       {
         "name": "Planksper",
+        "children": []
+      },
+      {
+        "name": "Egel",
         "children": []
       },
       {
