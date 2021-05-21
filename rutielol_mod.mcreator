@@ -390,6 +390,16 @@
       "path": "~/Manex vallei/Manexhout"
     },
     {
+      "name": "EendmanBandiet",
+      "type": "mob",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eendman_bandiet",
+      "path": "~/Eendman"
+    },
+    {
       "name": "BewaakEendman",
       "type": "mob",
       "sortid": 40,
@@ -400,14 +410,84 @@
       "path": "~/Eendman"
     },
     {
-      "name": "EendmanBandiet",
+      "name": "MitchuEi",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mitchu_ei",
+      "path": "~/Mitchu"
+    },
+    {
+      "name": "BabyMitchuOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baby_mitchu_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mitchu"
+    },
+    {
+      "name": "BabyMitchu",
       "type": "mob",
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "eendman_bandiet",
-      "path": "~/Eendman"
+      "registry_name": "baby_mitchu",
+      "path": "~/Mitchu"
+    },
+    {
+      "name": "MitchuEiBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mitchu_ei_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mitchu"
     }
   ],
   "variable_elements": [],
@@ -439,32 +519,38 @@
       ],
       "category": "neutral",
       "subtitle": "Mitchu prrr"
+    },
+    {
+      "name": "mitchu_spawn",
+      "files": [
+        "mitchuspawn"
+      ],
+      "category": "neutral",
+      "subtitle": "Mitchu ei komt uit"
     }
   ],
   "language_map": {
     "en_us": {
+      "block.rutielol_mod.mitchu_ei": "Mitchu Ei",
       "block.rutielol_mod.manexhout_wood": "Manexhout Wood",
       "item.rutielol_mod.radioactieve_kat_spawn_egg": "Radioactieve Kat Spawn Egg",
       "entity.rutielol_mod.radioactieve_kat": "Radioactieve Kat",
+      "subtitles.mitchu_spawn": "Mitchu ei komt uit",
       "effect.radiatie_effect": "Radiatie",
       "block.rutielol_mod.manexhout_leaves": "Manexhout Leaves",
       "block.rutielol_mod.manexhout_fence": "Manexhout Fence",
       "subtitles.mitchu_hurt": "Mitchu heeft pijn",
       "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg",
       "block.rutielol_mod.manex_brick_stairs": "ManexBrick Stairs",
-      "item.rutielol_mod.bewaak_eendman_spawn_egg": "Bewaak Eendman Spawn Egg",
-      "entity.rutielol_mod.bewaak_eendman": "Bewaak Eendman",
       "block.rutielol_mod.manexhout_slab": "Manexhout Slab",
       "item.minecraft.potion.effect.radiatie_effect": "Potion of Radiatie",
       "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
       "entity.rutielol_mod.eendman": "Eendman",
       "block.rutielol_mod.manexhout_planks": "Manexhout Planks",
       "block.rutielol_mod.manexhout_log": "Manexhout Log",
-      "entity.rutielol_mod.eendman_bandiet": "Eendman Bandiet",
       "block.rutielol_mod.manexhout_stairs": "Manexhout Stairs",
       "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
       "biome.rutielol_mod.manexvallei": "Manexvallei",
-      "item.rutielol_mod.eendman_bandiet_spawn_egg": "Eendman Bandiet Spawn Egg",
       "subtitles.mitchu_death": "Mitchu sterft",
       "block.rutielol_mod.manex_brick_slab": "ManexBrick Slab",
       "item.rutielol_mod.mitchu_spawn_egg": "Mitchu Spawn Egg",
@@ -499,11 +585,11 @@
         "name": "Manex vallei",
         "children": [
           {
-            "name": "Manexhout",
+            "name": "ManexBricks",
             "children": []
           },
           {
-            "name": "ManexBricks",
+            "name": "Manexhout",
             "children": []
           }
         ]

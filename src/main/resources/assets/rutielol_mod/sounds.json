@@ -44,5 +44,15 @@
         "stream": false
       }
     ]
+  },
+  "mitchu_spawn": {
+    "category": "neutral",
+    "subtitle": "subtitles.mitchu_spawn",
+    "sounds": [
+      {
+        "name": "rutielol_mod:mitchuspawn",
+        "stream": false
+      }
+    ]
   }
 }

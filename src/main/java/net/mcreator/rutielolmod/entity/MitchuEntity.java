@@ -48,7 +48,7 @@ import java.util.HashMap;
 @RutielolModModElements.ModElement.Tag
 public class MitchuEntity extends RutielolModModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1f, 1f))
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.9f, 1f))
 					.build("mitchu").setRegistryName("mitchu");
 	public MitchuEntity(RutielolModModElements instance) {
 		super(instance, 4);

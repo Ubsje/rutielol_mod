@@ -24,7 +24,7 @@ public class MitchuRenderer {
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(MitchuEntity.entity, renderManager -> {
-				return new MobRenderer(renderManager, new Modelfull_block(), 1f) {
+				return new MobRenderer(renderManager, new Modelfull_block(), 0.7999999999999999f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("rutielol_mod:textures/mitchu_texture.png");
