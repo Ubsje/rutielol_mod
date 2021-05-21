@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:ManexhoutWood"
+        "value": "CUSTOM:ManexhoutLog"
       },
       {
         "value": ""
@@ -40,7 +40,7 @@
     "recipeReturnStack": {
       "value": "CUSTOM:ManexhoutPlanks"
     },
-    "name": "manexhout_planks_recipe",
+    "name": "manexhout_planks_recipe_log",
     "namespace": "mod"
   }
 }

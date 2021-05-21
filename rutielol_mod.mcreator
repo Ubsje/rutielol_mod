@@ -378,6 +378,16 @@
       "ids": {},
       "registry_name": "manex_brick_slab_recipe",
       "path": "~/Manex vallei/ManexBricks"
+    },
+    {
+      "name": "ManexhoutPlanksRecipeLog",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manexhout_planks_recipe_log",
+      "path": "~/Manex vallei/Manexhout"
     }
   ],
   "variable_elements": [],
