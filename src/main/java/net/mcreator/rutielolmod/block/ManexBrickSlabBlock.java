@@ -9,7 +9,6 @@ import net.minecraft.util.Direction;
 import net.minecraft.state.properties.SlabType;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
@@ -18,6 +17,7 @@ import net.minecraft.block.SlabBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
 import java.util.List;
@@ -28,14 +28,14 @@ public class ManexBrickSlabBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manex_brick_slab")
 	public static final Block block = null;
 	public ManexBrickSlabBlock(RutielolModModElements instance) {
-		super(instance, 31);
+		super(instance, 3);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+				.add(() -> new BlockItem(block, new Item.Properties().group(RutieLolModItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends SlabBlock {
 		public CustomBlock() {

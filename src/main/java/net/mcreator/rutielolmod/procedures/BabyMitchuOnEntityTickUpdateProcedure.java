@@ -12,7 +12,7 @@ import java.util.Map;
 @RutielolModModElements.ModElement.Tag
 public class BabyMitchuOnEntityTickUpdateProcedure extends RutielolModModElements.ModElement {
 	public BabyMitchuOnEntityTickUpdateProcedure(RutielolModModElements instance) {
-		super(instance, 41);
+		super(instance, 42);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

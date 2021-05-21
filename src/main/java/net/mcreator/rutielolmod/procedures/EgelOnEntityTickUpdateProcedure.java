@@ -17,7 +17,7 @@ import java.util.Comparator;
 @RutielolModModElements.ModElement.Tag
 public class EgelOnEntityTickUpdateProcedure extends RutielolModModElements.ModElement {
 	public EgelOnEntityTickUpdateProcedure(RutielolModModElements instance) {
-		super(instance, 42);
+		super(instance, 44);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -23,7 +23,6 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.TameableEntity;
@@ -43,6 +42,7 @@ import net.minecraft.entity.AgeableEntity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.rutielolmod.procedures.BabyMitchuOnEntityTickUpdateProcedure;
+import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.entity.renderer.BabyMitchuRenderer;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
@@ -56,7 +56,7 @@ public class BabyMitchuEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.5f, 0.5f)).build("baby_mitchu").setRegistryName("baby_mitchu");
 	public BabyMitchuEntity(RutielolModModElements instance) {
-		super(instance, 41);
+		super(instance, 17);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BabyMitchuRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
@@ -64,8 +64,8 @@ public class BabyMitchuEntity extends RutielolModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -1, -16777216, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("baby_mitchu_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -1, -16777216, new Item.Properties().group(RutieLolModItemGroup.tab))
+				.setRegistryName("baby_mitchu_spawn_egg"));
 	}
 
 	@Override

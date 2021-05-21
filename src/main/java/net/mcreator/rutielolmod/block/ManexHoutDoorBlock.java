@@ -13,7 +13,6 @@ import net.minecraft.state.properties.DoubleBlockHalf;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -24,6 +23,7 @@ import net.minecraft.block.DoorBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
 import java.util.List;
@@ -34,13 +34,14 @@ public class ManexHoutDoorBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manex_hout_door")
 	public static final Block block = null;
 	public ManexHoutDoorBlock(RutielolModModElements instance) {
-		super(instance, 42);
+		super(instance, 10);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(RutieLolModItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

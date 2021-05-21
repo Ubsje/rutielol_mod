@@ -14,7 +14,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -32,6 +31,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.entity.renderer.EendmanRenderer;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
@@ -41,7 +41,7 @@ public class EendmanEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.5999999999999999f)).build("eendman").setRegistryName("eendman");
 	public EendmanEntity(RutielolModModElements instance) {
-		super(instance, 1);
+		super(instance, 19);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EendmanRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
@@ -49,8 +49,8 @@ public class EendmanEntity extends RutielolModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -256, -26368, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("eendman_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -256, -26368, new Item.Properties().group(RutieLolModItemGroup.tab))
+				.setRegistryName("eendman_spawn_egg"));
 	}
 
 	@Override

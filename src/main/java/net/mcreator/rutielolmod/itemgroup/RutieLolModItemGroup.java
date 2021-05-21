@@ -1,11 +1,19 @@
 
 package net.mcreator.rutielolmod.itemgroup;
 
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+
+import net.mcreator.rutielolmod.item.ManexietItem;
+import net.mcreator.rutielolmod.RutielolModModElements;
+
 @RutielolModModElements.ModElement.Tag
 public class RutieLolModItemGroup extends RutielolModModElements.ModElement {
-
 	public RutieLolModItemGroup(RutielolModModElements instance) {
-		super(instance, 48);
+		super(instance, 49);
 	}
 
 	@Override
@@ -23,7 +31,5 @@ public class RutieLolModItemGroup extends RutielolModModElements.ModElement {
 			}
 		};
 	}
-
 	public static ItemGroup tab;
-
 }

@@ -18,7 +18,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -38,6 +37,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 
 import net.mcreator.rutielolmod.procedures.EgelOnEntityTickUpdateProcedure;
+import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.entity.renderer.EgelRenderer;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
@@ -50,7 +50,7 @@ public class EgelEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.5f, 0.6f)).build("egel").setRegistryName("egel");
 	public EgelEntity(RutielolModModElements instance) {
-		super(instance, 42);
+		super(instance, 21);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EgelRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -59,8 +59,8 @@ public class EgelEntity extends RutielolModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -10079488, -13057, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("egel_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -10079488, -13057, new Item.Properties().group(RutieLolModItemGroup.tab))
+				.setRegistryName("egel_spawn_egg"));
 	}
 
 	@SubscribeEvent

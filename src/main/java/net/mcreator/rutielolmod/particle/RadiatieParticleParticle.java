@@ -24,7 +24,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 public class RadiatieParticleParticle extends RutielolModModElements.ModElement {
 	public static final BasicParticleType particle = new BasicParticleType(false);
 	public RadiatieParticleParticle(RutielolModModElements instance) {
-		super(instance, 1);
+		super(instance, 28);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

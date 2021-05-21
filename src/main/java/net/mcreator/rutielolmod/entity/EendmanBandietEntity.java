@@ -14,7 +14,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -33,6 +32,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.entity.renderer.EendmanBandietRenderer;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
@@ -42,7 +42,7 @@ public class EendmanBandietEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.5999999999999999f)).build("eendman_bandiet").setRegistryName("eendman_bandiet");
 	public EendmanBandietEntity(RutielolModModElements instance) {
-		super(instance, 41);
+		super(instance, 20);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EendmanBandietRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
@@ -50,7 +50,7 @@ public class EendmanBandietEntity extends RutielolModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -6710887, -256, new Item.Properties().group(ItemGroup.MISC))
+		elements.items.add(() -> new SpawnEggItem(entity, -6710887, -256, new Item.Properties().group(RutieLolModItemGroup.tab))
 				.setRegistryName("eendman_bandiet_spawn_egg"));
 	}
 

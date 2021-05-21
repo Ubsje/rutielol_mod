@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:RutieLolMod"
     },
     "destroyTool": "Not specified",
     "customDrop": {

@@ -8,7 +8,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
@@ -17,6 +16,7 @@ import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
 import java.util.List;
@@ -27,14 +27,14 @@ public class ManexhoutFenceGateBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manexhout_fence_gate")
 	public static final Block block = null;
 	public ManexhoutFenceGateBlock(RutielolModModElements instance) {
-		super(instance, 17);
+		super(instance, 13);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+				.add(() -> new BlockItem(block, new Item.Properties().group(RutieLolModItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends FenceGateBlock {
 		public CustomBlock() {

@@ -26,7 +26,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
@@ -42,6 +41,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.entity.renderer.PlanksperRenderer;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
@@ -51,7 +51,7 @@ public class PlanksperEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.3f, 0.3f)).build("planksper").setRegistryName("planksper");
 	public PlanksperEntity(RutielolModModElements instance) {
-		super(instance, 2);
+		super(instance, 23);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new PlanksperRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -60,8 +60,8 @@ public class PlanksperEntity extends RutielolModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -13369396, -103, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("planksper_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -13369396, -103, new Item.Properties().group(RutieLolModItemGroup.tab))
+				.setRegistryName("planksper_spawn_egg"));
 	}
 
 	@SubscribeEvent
