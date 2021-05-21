@@ -30,10 +30,8 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.RegistryKey;
-import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.rutielolmod.entity.EendmanEntity;
 import net.mcreator.rutielolmod.block.ManexhoutLogBlock;
 import net.mcreator.rutielolmod.block.ManexhoutLeavesBlock;
 import net.mcreator.rutielolmod.RutielolModModElements;
@@ -72,7 +70,6 @@ public class ManexvalleiBiome extends RutielolModModElements.ModElement {
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EendmanEntity.entity, 20, 4, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.PLAINS).depth(0.1f).scale(0.3f)
 						.temperature(0.5f).downfall(0.2f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
