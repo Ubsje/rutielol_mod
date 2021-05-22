@@ -827,6 +827,46 @@
       "ids": {},
       "registry_name": "egel_loot",
       "path": "~/Egel"
+    },
+    {
+      "name": "Bandietloottabel",
+      "type": "loottable",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bandietloottabel",
+      "path": "~/Eendman"
+    },
+    {
+      "name": "Bewaakhokloot",
+      "type": "loottable",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bewaakhokloot",
+      "path": "~/Eendman"
+    },
+    {
+      "name": "Bewaak1",
+      "type": "structure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bewaak_1",
+      "path": "~/Manex vallei/Structures"
+    },
+    {
+      "name": "Bewaak2",
+      "type": "structure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bewaak_2",
+      "path": "~/Manex vallei/Structures"
     }
   ],
   "variable_elements": [],
@@ -893,8 +933,8 @@
       "block.rutielol_mod.manex_brick_stairs": "ManexBrick Stairs",
       "item.rutielol_mod.bewaak_eendman_spawn_egg": "Bewaak Eendman Spawn Egg",
       "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
-      "entity.rutielol_mod.eendman": "Eendman",
       "item.rutielol_mod.stekel_diamond": "Diamond Sword met Stekels",
+      "entity.rutielol_mod.eendman": "Eendman",
       "block.rutielol_mod.manexhout_log": "Manexhout Log",
       "item.rutielol_mod.stekel_netherite": "Netherite Sword met Stekels",
       "item.rutielol_mod.stekel_wood": "Wooden Sword met Stekels",

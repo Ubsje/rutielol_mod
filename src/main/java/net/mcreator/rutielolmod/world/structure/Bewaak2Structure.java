@@ -36,11 +36,11 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 import java.util.Random;
 
 @RutielolModModElements.ModElement.Tag
-public class Kamp2Structure extends RutielolModModElements.ModElement {
+public class Bewaak2Structure extends RutielolModModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public Kamp2Structure(RutielolModModElements instance) {
-		super(instance, 50);
+	public Bewaak2Structure(RutielolModModElements instance) {
+		super(instance, 75);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -73,12 +73,12 @@ public class Kamp2Structure extends RutielolModModElements.ModElement {
 								continue;
 							Rotation rotation = Rotation.values()[random.nextInt(3)];
 							Mirror mirror = Mirror.values()[random.nextInt(2)];
-							BlockPos spawnTo = new BlockPos(i + 0, j + -1, k + 0);
+							BlockPos spawnTo = new BlockPos(i + 0, j + -7, k + 0);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("rutielol_mod", "kamp2"));
+									.getTemplateDefaulted(new ResourceLocation("rutielol_mod", "bewaak2"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,
@@ -92,8 +92,8 @@ public class Kamp2Structure extends RutielolModModElements.ModElement {
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("kamp_2"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("rutielol_mod:kamp_2"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("bewaak_2"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("rutielol_mod:bewaak_2"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
