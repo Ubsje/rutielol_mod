@@ -59,6 +59,7 @@ public class RutielolModModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("rutielol_mod", "disc_poki")));
 		sounds.put(new ResourceLocation("rutielol_mod", "trommel"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("rutielol_mod", "trommel")));
+		sounds.put(new ResourceLocation("rutielol_mod", "tuu"), new net.minecraft.util.SoundEvent(new ResourceLocation("rutielol_mod", "tuu")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("rutielol_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

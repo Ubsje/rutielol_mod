@@ -136,5 +136,15 @@
         "stream": false
       }
     ]
+  },
+  "tuu": {
+    "category": "music",
+    "subtitle": "subtitles.tuu",
+    "sounds": [
+      {
+        "name": "rutielol_mod:tuu",
+        "stream": true
+      }
+    ]
   }
 }

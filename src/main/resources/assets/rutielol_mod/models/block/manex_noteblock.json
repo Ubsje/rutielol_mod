@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rutielol_mod:blocks/manexnootblok2",
+    "up": "rutielol_mod:blocks/manexnootblok2",
+    "north": "rutielol_mod:blocks/manexnootblok",
+    "east": "rutielol_mod:blocks/manexnootblok",
+    "south": "rutielol_mod:blocks/manexnootblok",
+    "west": "rutielol_mod:blocks/manexnootblok",
+    "particle": "rutielol_mod:blocks/manexnootblok2"
+  }
+}

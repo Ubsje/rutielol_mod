@@ -36,11 +36,11 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 import java.util.Random;
 
 @RutielolModModElements.ModElement.Tag
-public class Dorpje1Structure extends RutielolModModElements.ModElement {
+public class Kamp3Structure extends RutielolModModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public Dorpje1Structure(RutielolModModElements instance) {
-		super(instance, 79);
+	public Kamp3Structure(RutielolModModElements instance) {
+		super(instance, 84);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -58,7 +58,7 @@ public class Dorpje1Structure extends RutielolModModElements.ModElement {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 3000) {
+					if ((random.nextInt(1000000) + 1) <= 1000) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
@@ -78,7 +78,7 @@ public class Dorpje1Structure extends RutielolModModElements.ModElement {
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("rutielol_mod", "dorp1"));
+									.getTemplateDefaulted(new ResourceLocation("rutielol_mod", "kamp3"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,
@@ -92,8 +92,8 @@ public class Dorpje1Structure extends RutielolModModElements.ModElement {
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("dorpje_1"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("rutielol_mod:dorpje_1"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("kamp_3"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("rutielol_mod:kamp_3"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

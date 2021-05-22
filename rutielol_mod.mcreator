@@ -994,6 +994,76 @@
           }
         ]
       }
+    },
+    {
+      "name": "ManexNoteblockOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_noteblock_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Music discs/Manex noteblock"
+    },
+    {
+      "name": "ManexNoteblock",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_noteblock",
+      "path": "~/Music discs/Manex noteblock"
+    },
+    {
+      "name": "ManexNoteblockRecipe",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_noteblock_recipe",
+      "path": "~/Music discs/Manex noteblock"
+    },
+    {
+      "name": "Paal1",
+      "type": "structure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "paal_1",
+      "path": "~/Manex vallei/Structures"
+    },
+    {
+      "name": "Kamp3",
+      "type": "structure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kamp_3",
+      "path": "~/Manex vallei/Structures"
     }
   ],
   "variable_elements": [],
@@ -1070,6 +1140,14 @@
       ],
       "category": "player",
       "subtitle": "De Mitchu Trommel wordt bespeeld"
+    },
+    {
+      "name": "tuu",
+      "files": [
+        "tuu"
+      ],
+      "category": "music",
+      "subtitle": "Tuu"
     }
   ],
   "language_map": {
@@ -1120,6 +1198,8 @@
       "block.rutielol_mod.manexhout_planks": "Manexhout Planks",
       "item.rutielol_mod.stekel_gold": "Golden Sword met Stekels",
       "block.rutielol_mod.manex_hout_door": "Manex Hout Door",
+      "subtitles.tuu": "Tuu",
+      "block.rutielol_mod.manex_noteblock": "Manex Noteblock",
       "subtitles.trommel": "De Mitchu Trommel wordt bespeeld",
       "block.rutielol_mod.manexhout_stairs": "Manexhout Stairs",
       "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
@@ -1128,6 +1208,7 @@
       "item.rutielol_mod.baby_mitchu_spawn_egg": "Baby Mitchu Spawn Egg",
       "item.rutielol_mod.stekel": "Egie Stekel",
       "subtitles.mitchu_death": "Mitchu sterft",
+      "item.rutielol_mod.uranium": "Uranium",
       "subtitles.disc_ikhaatmonsters": "Ik haat monsters speelt af",
       "item.minecraft.splash_potion.effect.radiatie_effect": "Splash Radiatie",
       "block.rutielol_mod.manexbricks": "Manexbricks",
@@ -1180,7 +1261,12 @@
       },
       {
         "name": "Music discs",
-        "children": []
+        "children": [
+          {
+            "name": "Manex noteblock",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Radiatie",
