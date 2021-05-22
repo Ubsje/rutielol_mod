@@ -869,14 +869,24 @@
       "path": "~/Manex vallei/Structures"
     },
     {
-      "name": "Eendmanloottable",
-      "type": "loottable",
-      "sortid": 76,
+      "name": "Dorpje1",
+      "type": "structure",
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "eendmanloottable",
-      "path": "~/Eendman"
+      "registry_name": "dorpje_1",
+      "path": "~/Manex vallei/Structures"
+    },
+    {
+      "name": "Dorpje2",
+      "type": "structure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dorpje_2",
+      "path": "~/Manex vallei/Structures"
     },
     {
       "name": "Bewaakloottable",
@@ -899,24 +909,91 @@
       "path": "~/Manex vallei/Structures"
     },
     {
-      "name": "Dorpje1",
-      "type": "structure",
-      "sortid": 79,
+      "name": "Eendmanloottable",
+      "type": "loottable",
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dorpje_1",
-      "path": "~/Manex vallei/Structures"
+      "registry_name": "eendmanloottable",
+      "path": "~/Eendman"
     },
     {
-      "name": "Dorpje2",
-      "type": "structure",
-      "sortid": 80,
+      "name": "UraniumFoodEaten",
+      "type": "procedure",
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dorpje_2",
-      "path": "~/Manex vallei/Structures"
+      "registry_name": "uranium_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "Uranium",
+      "type": "food",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "uranium",
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "TrommelRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trommel_recipe",
+      "path": "~/Mitchu"
+    },
+    {
+      "name": "Trommel",
+      "type": "item",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trommel",
+      "path": "~/Mitchu"
+    },
+    {
+      "name": "TrommelRightClickedInAir",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trommel_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -972,6 +1049,27 @@
       ],
       "category": "music",
       "subtitle": "Poki poki speelt af"
+    },
+    {
+      "name": "trommel",
+      "files": [
+        "trommel1",
+        "trommel10",
+        "trommel11",
+        "trommel12",
+        "trommel13",
+        "trommel14",
+        "trommel2",
+        "trommel3",
+        "trommel4",
+        "trommel5",
+        "trommel6",
+        "trommel7",
+        "trommel8",
+        "trommel9"
+      ],
+      "category": "player",
+      "subtitle": "De Mitchu Trommel wordt bespeeld"
     }
   ],
   "language_map": {
@@ -1013,6 +1111,7 @@
       "block.rutielol_mod.manexhout_leaves": "Manexhout Leaves",
       "entity.rutielol_mod.egel": "Egie Egel",
       "subtitles.mitchu_hurt": "Mitchu heeft pijn",
+      "item.rutielol_mod.trommel": "Mitchu Trommel",
       "item.rutielol_mod.planksper_spawn_egg": "Planksper Spawn Egg",
       "entity.rutielol_mod.bewaak_eendman": "Bewaak Eendman",
       "block.rutielol_mod.manexhout_slab": "Manexhout Slab",
@@ -1021,6 +1120,7 @@
       "block.rutielol_mod.manexhout_planks": "Manexhout Planks",
       "item.rutielol_mod.stekel_gold": "Golden Sword met Stekels",
       "block.rutielol_mod.manex_hout_door": "Manex Hout Door",
+      "subtitles.trommel": "De Mitchu Trommel wordt bespeeld",
       "block.rutielol_mod.manexhout_stairs": "Manexhout Stairs",
       "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
       "biome.rutielol_mod.manexvallei": "Manexvallei",
@@ -1069,14 +1169,18 @@
             "children": []
           },
           {
-            "name": "Manexhout",
+            "name": "Structures",
             "children": []
           },
           {
-            "name": "Structures",
+            "name": "Manexhout",
             "children": []
           }
         ]
+      },
+      {
+        "name": "Music discs",
+        "children": []
       },
       {
         "name": "Radiatie",
@@ -1084,10 +1188,6 @@
       },
       {
         "name": "Eendman",
-        "children": []
-      },
-      {
-        "name": "Music discs",
         "children": []
       }
     ]

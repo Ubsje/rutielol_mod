@@ -74,5 +74,67 @@
         "stream": true
       }
     ]
+  },
+  "trommel": {
+    "category": "player",
+    "subtitle": "subtitles.trommel",
+    "sounds": [
+      {
+        "name": "rutielol_mod:trommel1",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel10",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel11",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel12",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel13",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel14",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel2",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel3",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel4",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel5",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel6",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel7",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel8",
+        "stream": false
+      },
+      {
+        "name": "rutielol_mod:trommel9",
+        "stream": false
+      }
+    ]
   }
 }
