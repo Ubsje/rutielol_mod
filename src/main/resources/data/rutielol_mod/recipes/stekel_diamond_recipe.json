@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_sword"
+  },
+  "addition": {
+    "item": "rutielol_mod:stekel_cluster"
+  },
+  "result": {
+    "item": "rutielol_mod:stekel_diamond"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "rutielol_mod:items/netherite_sword"
+  }
+}
