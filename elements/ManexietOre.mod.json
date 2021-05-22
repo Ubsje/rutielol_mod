@@ -104,7 +104,11 @@
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Manexvallei"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
@@ -112,7 +116,7 @@
     ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 1,
-    "minGenerateHeight": 4,
-    "maxGenerateHeight": 10
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 20
   }
 }
