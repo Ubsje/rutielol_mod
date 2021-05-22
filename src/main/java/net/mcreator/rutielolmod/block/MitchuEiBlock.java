@@ -55,7 +55,7 @@ public class MitchuEiBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:mitchu_ei")
 	public static final Block block = null;
 	public MitchuEiBlock(RutielolModModElements instance) {
-		super(instance, 14);
+		super(instance, 15);
 	}
 
 	@Override

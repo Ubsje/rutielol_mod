@@ -16,7 +16,7 @@ public class StekelClusterItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:stekel_cluster")
 	public static final Item block = null;
 	public StekelClusterItem(RutielolModModElements instance) {
-		super(instance, 56);
+		super(instance, 23);
 	}
 
 	@Override

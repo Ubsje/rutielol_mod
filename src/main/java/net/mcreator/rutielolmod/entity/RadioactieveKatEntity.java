@@ -52,7 +52,7 @@ public class RadioactieveKatEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 0.7000000000000001f)).build("radioactieve_kat").setRegistryName("radioactieve_kat");
 	public RadioactieveKatEntity(RutielolModModElements instance) {
-		super(instance, 24);
+		super(instance, 37);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new RadioactieveKatRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

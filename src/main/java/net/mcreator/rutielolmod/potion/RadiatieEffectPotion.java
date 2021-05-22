@@ -27,7 +27,7 @@ public class RadiatieEffectPotion extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:radiatie_effect")
 	public static final Potion potionType = null;
 	public RadiatieEffectPotion(RutielolModModElements instance) {
-		super(instance, 27);
+		super(instance, 40);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

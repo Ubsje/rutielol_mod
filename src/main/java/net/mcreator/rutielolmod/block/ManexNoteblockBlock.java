@@ -34,7 +34,7 @@ public class ManexNoteblockBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manex_noteblock")
 	public static final Block block = null;
 	public ManexNoteblockBlock(RutielolModModElements instance) {
-		super(instance, 81);
+		super(instance, 14);
 	}
 
 	@Override

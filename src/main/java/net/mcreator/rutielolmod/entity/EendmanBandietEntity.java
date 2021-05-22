@@ -42,7 +42,7 @@ public class EendmanBandietEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.5999999999999999f)).build("eendman_bandiet").setRegistryName("eendman_bandiet");
 	public EendmanBandietEntity(RutielolModModElements instance) {
-		super(instance, 20);
+		super(instance, 33);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EendmanBandietRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

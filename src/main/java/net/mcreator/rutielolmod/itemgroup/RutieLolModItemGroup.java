@@ -13,7 +13,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 @RutielolModModElements.ModElement.Tag
 public class RutieLolModItemGroup extends RutielolModModElements.ModElement {
 	public RutieLolModItemGroup(RutielolModModElements instance) {
-		super(instance, 49);
+		super(instance, 62);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ import java.util.Map;
 @RutielolModModElements.ModElement.Tag
 public class TrommelRightClickedInAirProcedure extends RutielolModModElements.ModElement {
 	public TrommelRightClickedInAirProcedure(RutielolModModElements instance) {
-		super(instance, 77);
+		super(instance, 87);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

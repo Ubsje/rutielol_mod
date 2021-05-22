@@ -40,7 +40,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 public class ManexvalleiBiome extends RutielolModModElements.ModElement {
 	public static Biome biome;
 	public ManexvalleiBiome(RutielolModModElements instance) {
-		super(instance, 25);
+		super(instance, 38);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

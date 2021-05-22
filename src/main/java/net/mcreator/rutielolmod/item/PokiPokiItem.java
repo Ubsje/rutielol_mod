@@ -16,7 +16,7 @@ public class PokiPokiItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:poki_poki")
 	public static final Item block = null;
 	public PokiPokiItem(RutielolModModElements instance) {
-		super(instance, 52);
+		super(instance, 19);
 	}
 
 	@Override

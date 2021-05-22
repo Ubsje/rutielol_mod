@@ -40,7 +40,7 @@ public class Bewaak1Structure extends RutielolModModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	public Bewaak1Structure(RutielolModModElements instance) {
-		super(instance, 74);
+		super(instance, 78);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
