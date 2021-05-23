@@ -1,0 +1,12 @@
+{
+  "group": "rutielol_mod",
+  "type": "minecraft:blasting",
+  "experience": 20,
+  "cookingtime": 180,
+  "ingredient": {
+    "item": "rutielol_mod:manexiet_ore"
+  },
+  "result": {
+    "item": "rutielol_mod:manexiet"
+  }
+}

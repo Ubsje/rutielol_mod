@@ -1,0 +1,39 @@
+{
+  "group": "rutielol_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "rutielol_mod:manexiet"
+    },
+    "2": {
+      "item": "rutielol_mod:manexiet"
+    },
+    "3": {
+      "item": "rutielol_mod:manexiet"
+    },
+    "4": {
+      "item": "rutielol_mod:manexiet"
+    },
+    "5": {
+      "item": "rutielol_mod:manexiet"
+    },
+    "6": {
+      "item": "rutielol_mod:manexiet"
+    },
+    "7": {
+      "item": "rutielol_mod:manexiet"
+    },
+    "8": {
+      "item": "rutielol_mod:manexiet"
+    }
+  },
+  "result": {
+    "item": "rutielol_mod:manex_fx_armor_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 30.0,
+    "cookingTime": 210,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:ManexietOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Manexiet"
+    },
+    "name": "manexiet_smelt",
+    "namespace": "mod"
+  }
+}

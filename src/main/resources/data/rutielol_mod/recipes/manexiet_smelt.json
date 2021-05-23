@@ -1,0 +1,12 @@
+{
+  "group": "rutielol_mod",
+  "type": "minecraft:smelting",
+  "experience": 30,
+  "cookingtime": 210,
+  "ingredient": {
+    "item": "rutielol_mod:manexiet_ore"
+  },
+  "result": {
+    "item": "rutielol_mod:manexiet"
+  }
+}

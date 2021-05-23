@@ -1,0 +1,26 @@
+{
+  "group": "rutielol_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "rutielol_mod:manexiet"
+    },
+    "2": {
+      "item": "rutielol_mod:manexiet"
+    },
+    "3": {
+      "item": "rutielol_mod:manexiet"
+    },
+    "5": {
+      "item": "rutielol_mod:manexiet"
+    }
+  },
+  "result": {
+    "item": "rutielol_mod:manex_fx_armor_boots",
+    "count": 1
+  }
+}

@@ -1064,6 +1064,72 @@
       "ids": {},
       "registry_name": "kamp_3",
       "path": "~/Manex vallei/Structures"
+    },
+    {
+      "name": "ManexFxArmor",
+      "type": "armor",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_fx_armor",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Manex Armor"
+    },
+    {
+      "name": "ManexLeggings",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_leggings",
+      "path": "~/Manex Armor"
+    },
+    {
+      "name": "ManexBoots",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_boots",
+      "path": "~/Manex Armor"
+    },
+    {
+      "name": "ManexChestplate",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manex_chestplate",
+      "path": "~/Manex Armor"
+    },
+    {
+      "name": "ManexietSmelt",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manexiet_smelt",
+      "path": "~/Manexiet"
+    },
+    {
+      "name": "ManexietBlast",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manexiet_blast",
+      "path": "~/Manexiet"
     }
   ],
   "variable_elements": [],
@@ -1161,6 +1227,7 @@
       "block.rutielol_mod.manexiet_ore": "Manexiet Ore",
       "entity.rutielol_mod.eendman": "Eendman",
       "item.rutielol_mod.stekel_diamond": "Diamond Sword met Stekels",
+      "item.rutielol_mod.manex_fx_armor_boots": "ManexFx Boots",
       "block.rutielol_mod.manexhout_log": "Manexhout Log",
       "item.rutielol_mod.stekel_netherite": "Netherite Sword met Stekels",
       "item.rutielol_mod.stekel_wood": "Wooden Sword met Stekels",
@@ -1180,6 +1247,7 @@
       "itemGroup.tabrutie_lol_mod": "rutielol mod",
       "death.attack.radiation": "%1$s is doodgeradieerd",
       "item.minecraft.tipped_arrow.effect.radiatie_effect": "Arrow of Radiatie",
+      "item.rutielol_mod.manex_fx_armor_leggings": "ManexFx Leggings",
       "block.rutielol_mod.manexhout_fence_gate": "Manexhout Fence Gate",
       "item.rutielol_mod.stekel_iron": "Iron Sword met Stekels",
       "block.rutielol_mod.manexhout_wood": "Manexhout Wood",
@@ -1200,6 +1268,7 @@
       "block.rutielol_mod.manex_hout_door": "Manex Hout Door",
       "subtitles.tuu": "Tuu",
       "block.rutielol_mod.manex_noteblock": "Manex Noteblock",
+      "item.rutielol_mod.manex_fx_armor_helmet": "Manex Fx Armor Helmet",
       "subtitles.trommel": "De Mitchu Trommel wordt bespeeld",
       "block.rutielol_mod.manexhout_stairs": "Manexhout Stairs",
       "item.rutielol_mod.eendman_spawn_egg": "Eendman Spawn Egg",
@@ -1207,6 +1276,7 @@
       "item.rutielol_mod.eendman_bandiet_spawn_egg": "Eendman Bandiet Spawn Egg",
       "item.rutielol_mod.baby_mitchu_spawn_egg": "Baby Mitchu Spawn Egg",
       "item.rutielol_mod.stekel": "Egie Stekel",
+      "item.rutielol_mod.manex_fx_armor_chestplate": "ManexFx Chestplate",
       "subtitles.mitchu_death": "Mitchu sterft",
       "item.rutielol_mod.uranium": "Uranium",
       "subtitles.disc_ikhaatmonsters": "Ik haat monsters speelt af",
@@ -1274,6 +1344,10 @@
       },
       {
         "name": "Eendman",
+        "children": []
+      },
+      {
+        "name": "Manex Armor",
         "children": []
       }
     ]
