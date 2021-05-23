@@ -17,7 +17,7 @@ import java.util.Map;
 @RutielolModModElements.ModElement.Tag
 public class ManexNoteblockOnBlockRightClickedProcedure extends RutielolModModElements.ModElement {
 	public ManexNoteblockOnBlockRightClickedProcedure(RutielolModModElements instance) {
-		super(instance, 81);
+		super(instance, 88);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

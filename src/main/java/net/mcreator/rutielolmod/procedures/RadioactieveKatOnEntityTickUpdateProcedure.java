@@ -20,7 +20,7 @@ import java.util.Comparator;
 @RutielolModModElements.ModElement.Tag
 public class RadioactieveKatOnEntityTickUpdateProcedure extends RutielolModModElements.ModElement {
 	public RadioactieveKatOnEntityTickUpdateProcedure(RutielolModModElements instance) {
-		super(instance, 29);
+		super(instance, 42);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

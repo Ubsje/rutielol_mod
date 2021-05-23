@@ -40,7 +40,7 @@ public class Paal1Structure extends RutielolModModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	public Paal1Structure(RutielolModModElements instance) {
-		super(instance, 83);
+		super(instance, 90);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
