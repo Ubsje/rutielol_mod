@@ -56,7 +56,7 @@ public class BabyMitchuEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.5f, 0.5f)).build("baby_mitchu").setRegistryName("baby_mitchu");
 	public BabyMitchuEntity(RutielolModModElements instance) {
-		super(instance, 30);
+		super(instance, 17);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BabyMitchuRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

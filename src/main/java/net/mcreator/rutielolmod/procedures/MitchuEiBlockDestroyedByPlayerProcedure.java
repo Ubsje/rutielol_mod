@@ -23,7 +23,7 @@ import java.util.Map;
 @RutielolModModElements.ModElement.Tag
 public class MitchuEiBlockDestroyedByPlayerProcedure extends RutielolModModElements.ModElement {
 	public MitchuEiBlockDestroyedByPlayerProcedure(RutielolModModElements instance) {
-		super(instance, 56);
+		super(instance, 43);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

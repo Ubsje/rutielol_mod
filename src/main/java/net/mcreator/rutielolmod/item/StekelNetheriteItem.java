@@ -18,7 +18,7 @@ public class StekelNetheriteItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:stekel_netherite")
 	public static final Item block = null;
 	public StekelNetheriteItem(RutielolModModElements instance) {
-		super(instance, 29);
+		super(instance, 62);
 	}
 
 	@Override

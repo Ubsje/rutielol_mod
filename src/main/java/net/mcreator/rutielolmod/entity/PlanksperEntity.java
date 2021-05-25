@@ -51,7 +51,7 @@ public class PlanksperEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.3f, 0.3f)).build("planksper").setRegistryName("planksper");
 	public PlanksperEntity(RutielolModModElements instance) {
-		super(instance, 36);
+		super(instance, 23);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new PlanksperRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

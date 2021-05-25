@@ -16,7 +16,7 @@ public class ManexietItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manexiet")
 	public static final Item block = null;
 	public ManexietItem(RutielolModModElements instance) {
-		super(instance, 17);
+		super(instance, 16);
 	}
 
 	@Override

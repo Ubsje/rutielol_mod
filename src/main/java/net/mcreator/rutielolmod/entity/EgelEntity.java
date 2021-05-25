@@ -50,7 +50,7 @@ public class EgelEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.5f, 0.6f)).build("egel").setRegistryName("egel");
 	public EgelEntity(RutielolModModElements instance) {
-		super(instance, 34);
+		super(instance, 21);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EgelRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

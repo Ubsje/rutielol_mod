@@ -23,7 +23,7 @@ public class UraniumItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:uranium")
 	public static final Item block = null;
 	public UraniumItem(RutielolModModElements instance) {
-		super(instance, 20);
+		super(instance, 76);
 	}
 
 	@Override

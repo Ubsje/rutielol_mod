@@ -16,7 +16,7 @@ public class StekelStoneItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:stekel_stone")
 	public static final Item block = null;
 	public StekelStoneItem(RutielolModModElements instance) {
-		super(instance, 25);
+		super(instance, 63);
 	}
 
 	@Override

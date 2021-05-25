@@ -51,7 +51,7 @@ public class MitchuEntity extends RutielolModModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.9f, 1f))
 					.build("mitchu").setRegistryName("mitchu");
 	public MitchuEntity(RutielolModModElements instance) {
-		super(instance, 35);
+		super(instance, 22);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new MitchuRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

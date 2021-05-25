@@ -16,7 +16,7 @@ public class IkHaatMonstersItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:ik_haat_monsters")
 	public static final Item block = null;
 	public IkHaatMonstersItem(RutielolModModElements instance) {
-		super(instance, 18);
+		super(instance, 51);
 	}
 
 	@Override

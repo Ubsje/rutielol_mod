@@ -18,7 +18,7 @@ public class StekelIronItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:stekel_iron")
 	public static final Item block = null;
 	public StekelIronItem(RutielolModModElements instance) {
-		super(instance, 27);
+		super(instance, 60);
 	}
 
 	@Override

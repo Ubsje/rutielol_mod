@@ -13,7 +13,7 @@ import java.util.Map;
 @RutielolModModElements.ModElement.Tag
 public class UraniumFoodEatenProcedure extends RutielolModModElements.ModElement {
 	public UraniumFoodEatenProcedure(RutielolModModElements instance) {
-		super(instance, 85);
+		super(instance, 76);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -48,7 +48,7 @@ public class ManexietOreBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manexiet_ore")
 	public static final Block block = null;
 	public ManexietOreBlock(RutielolModModElements instance) {
-		super(instance, 16);
+		super(instance, 15);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

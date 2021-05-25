@@ -24,7 +24,7 @@ public class TrommelItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:trommel")
 	public static final Item block = null;
 	public TrommelItem(RutielolModModElements instance) {
-		super(instance, 21);
+		super(instance, 77);
 	}
 
 	@Override

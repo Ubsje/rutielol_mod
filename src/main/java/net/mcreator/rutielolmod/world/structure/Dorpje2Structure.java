@@ -40,7 +40,7 @@ public class Dorpje2Structure extends RutielolModModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	public Dorpje2Structure(RutielolModModElements instance) {
-		super(instance, 81);
+		super(instance, 80);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

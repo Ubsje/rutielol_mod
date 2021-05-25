@@ -12,7 +12,7 @@ import java.util.Map;
 @RutielolModModElements.ModElement.Tag
 public class RadiatieEffectOnPotionActiveTickProcedure extends RutielolModModElements.ModElement {
 	public RadiatieEffectOnPotionActiveTickProcedure(RutielolModModElements instance) {
-		super(instance, 44);
+		super(instance, 31);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

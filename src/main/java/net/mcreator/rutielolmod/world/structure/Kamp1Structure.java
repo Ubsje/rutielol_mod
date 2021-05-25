@@ -40,7 +40,7 @@ public class Kamp1Structure extends RutielolModModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	public Kamp1Structure(RutielolModModElements instance) {
-		super(instance, 64);
+		super(instance, 49);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
