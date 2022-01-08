@@ -17,6 +17,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 public class StekelDiamondItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:stekel_diamond")
 	public static final Item block = null;
+
 	public StekelDiamondItem(RutielolModModElements instance) {
 		super(instance, 58);
 	}
@@ -45,7 +46,7 @@ public class StekelDiamondItem extends RutielolModModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Items.DIAMOND, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Items.DIAMOND));
 			}
 		}, 3, -2.4f, new Item.Properties().group(RutieLolModItemGroup.tab)) {
 		}.setRegistryName("stekel_diamond"));

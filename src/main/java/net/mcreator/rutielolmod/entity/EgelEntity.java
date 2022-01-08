@@ -41,14 +41,17 @@ import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.entity.renderer.EgelRenderer;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 @RutielolModModElements.ModElement.Tag
 public class EgelEntity extends RutielolModModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.5f, 0.6f)).build("egel").setRegistryName("egel");
+
 	public EgelEntity(RutielolModModElements instance) {
 		super(instance, 21);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EgelRenderer.ModelRegisterHandler());
@@ -74,6 +77,7 @@ public class EgelEntity extends RutielolModModElements.ModElement {
 				(entityType, world, reason, pos,
 						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
@@ -147,14 +151,11 @@ public class EgelEntity extends RutielolModModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				EgelOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
-			}
+
+			EgelOnEntityTickUpdateProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

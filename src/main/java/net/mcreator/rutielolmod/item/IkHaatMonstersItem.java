@@ -15,6 +15,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 public class IkHaatMonstersItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:ik_haat_monsters")
 	public static final Item block = null;
+
 	public IkHaatMonstersItem(RutielolModModElements instance) {
 		super(instance, 51);
 	}
@@ -23,6 +24,7 @@ public class IkHaatMonstersItem extends RutielolModModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new MusicDiscItemCustom());
 	}
+
 	public static class MusicDiscItemCustom extends MusicDiscItem {
 		public MusicDiscItemCustom() {
 			super(0, RutielolModModElements.sounds.get(new ResourceLocation("rutielol_mod:disc_ikhaatmonsters")),

@@ -26,6 +26,7 @@ public class EendmanBandietRenderer {
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(EendmanBandietEntity.entity, renderManager -> {
 				return new MobRenderer(renderManager, new ModelEendman_bandiet(), 0.5f) {
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("rutielol_mod:textures/eendman_bandiet.png");
@@ -48,6 +49,7 @@ public class EendmanBandietRenderer {
 		private final ModelRenderer arm_rechts;
 		private final ModelRenderer kop_animatie;
 		private final ModelRenderer bb_main;
+
 		public ModelEendman_bandiet() {
 			textureWidth = 64;
 			textureHeight = 64;
@@ -108,6 +110,7 @@ public class EendmanBandietRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 			this.been_links.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
 			this.been_rechts.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
 			this.arm_rechts.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
@@ -116,4 +119,5 @@ public class EendmanBandietRenderer {
 			this.kop.rotateAngleX = f4 / (180F / (float) Math.PI);
 		}
 	}
+
 }

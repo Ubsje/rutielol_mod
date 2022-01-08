@@ -17,6 +17,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 public class StekelNetheriteItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:stekel_netherite")
 	public static final Item block = null;
+
 	public StekelNetheriteItem(RutielolModModElements instance) {
 		super(instance, 62);
 	}
@@ -45,7 +46,7 @@ public class StekelNetheriteItem extends RutielolModModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Items.NETHERITE_INGOT, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Items.NETHERITE_INGOT));
 			}
 		}, 3, -2.4f, new Item.Properties().group(RutieLolModItemGroup.tab).isImmuneToFire()) {
 		}.setRegistryName("stekel_netherite"));

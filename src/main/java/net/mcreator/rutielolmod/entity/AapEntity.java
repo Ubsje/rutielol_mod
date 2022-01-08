@@ -42,6 +42,7 @@ public class AapEntity extends RutielolModModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.6f)).build("aap").setRegistryName("aap");
+
 	public AapEntity(RutielolModModElements instance) {
 		super(instance, 91);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new AapRenderer.ModelRegisterHandler());
@@ -67,6 +68,7 @@ public class AapEntity extends RutielolModModElements.ModElement {
 				(entityType, world, reason, pos,
 						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {

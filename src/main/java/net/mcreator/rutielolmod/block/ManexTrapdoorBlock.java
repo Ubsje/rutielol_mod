@@ -7,8 +7,6 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -32,6 +30,7 @@ import java.util.Collections;
 public class ManexTrapdoorBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manex_trapdoor")
 	public static final Block block = null;
+
 	public ManexTrapdoorBlock(RutielolModModElements instance) {
 		super(instance, 11);
 	}
@@ -48,16 +47,12 @@ public class ManexTrapdoorBlock extends RutielolModModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends TrapDoorBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(1)
 					.harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("manex_trapdoor");
-		}
-
-		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
 		}
 
 		@Override

@@ -26,6 +26,7 @@ public class EgelRenderer {
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(EgelEntity.entity, renderManager -> {
 				return new MobRenderer(renderManager, new Modelegie_egel(), 0.3f) {
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("rutielol_mod:textures/egel.png");
@@ -45,6 +46,7 @@ public class EgelRenderer {
 		private final ModelRenderer frontrightleg;
 		private final ModelRenderer backleftleg;
 		private final ModelRenderer backrightleg;
+
 		public Modelegie_egel() {
 			textureWidth = 32;
 			textureHeight = 32;
@@ -95,6 +97,7 @@ public class EgelRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
 			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
 			this.backleftleg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
@@ -103,4 +106,5 @@ public class EgelRenderer {
 			this.frontleftleg.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		}
 	}
+
 }

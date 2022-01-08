@@ -1,7 +1,7 @@
 
 package net.mcreator.rutielolmod.particle;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
@@ -18,31 +18,27 @@ import net.minecraft.client.particle.IParticleFactory;
 import net.minecraft.client.particle.IAnimatedSprite;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.rutielolmod.RutielolModModElements;
-
-@RutielolModModElements.ModElement.Tag
-public class RadiatieParticleParticle extends RutielolModModElements.ModElement {
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+public class RadiatieParticleParticle {
 	public static final BasicParticleType particle = new BasicParticleType(false);
-	public RadiatieParticleParticle(RutielolModModElements instance) {
-		super(instance, 28);
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
-	}
 
 	@SubscribeEvent
-	public void registerParticleType(RegistryEvent.Register<ParticleType<?>> event) {
+	public static void registerParticleType(RegistryEvent.Register<ParticleType<?>> event) {
 		event.getRegistry().register(particle.setRegistryName("radiatie_particle"));
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
-	public void registerParticle(ParticleFactoryRegisterEvent event) {
+	public static void registerParticle(ParticleFactoryRegisterEvent event) {
 		Minecraft.getInstance().particles.registerFactory(particle, CustomParticleFactory::new);
 	}
+
 	@OnlyIn(Dist.CLIENT)
 	private static class CustomParticle extends SpriteTexturedParticle {
 		private final IAnimatedSprite spriteSet;
 		private float angularVelocity;
 		private float angularAcceleration;
+
 		protected CustomParticle(ClientWorld world, double x, double y, double z, double vx, double vy, double vz, IAnimatedSprite spriteSet) {
 			super(world, x, y, z);
 			this.spriteSet = spriteSet;
@@ -76,6 +72,7 @@ public class RadiatieParticleParticle extends RutielolModModElements.ModElement 
 	@OnlyIn(Dist.CLIENT)
 	private static class CustomParticleFactory implements IParticleFactory<BasicParticleType> {
 		private final IAnimatedSprite spriteSet;
+
 		public CustomParticleFactory(IAnimatedSprite spriteSet) {
 			this.spriteSet = spriteSet;
 		}

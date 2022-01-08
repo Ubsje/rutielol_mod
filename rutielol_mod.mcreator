@@ -1,23 +1,20 @@
 {
-  "id_map": {},
   "mod_elements": [
     {
       "name": "Eendman",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "eendman",
       "path": "~/Eendman"
     },
     {
       "name": "Planksper",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "planksper",
       "path": "~/Planksper"
     },
@@ -27,7 +24,6 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexiet",
       "path": "~/Manexiet"
     },
@@ -37,7 +33,6 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexiet_ore",
       "path": "~/Manexiet"
     },
@@ -47,7 +42,6 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexvallei",
       "path": "~/Manex vallei"
     },
@@ -57,27 +51,24 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "logs",
       "path": "~/Manex vallei/Manexhout"
     },
     {
-      "name": "RadiatieEffect",
+      "name": "RadiatieEffectPotionItem",
       "type": "potion",
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "radiatie_effect",
       "path": "~/Radiatie"
     },
     {
       "name": "RadioactieveKat",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "radioactieve_kat",
       "path": "~/Radiatie"
     },
@@ -87,7 +78,6 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "radiatie_particle",
       "path": "~/Radiatie"
     },
@@ -97,7 +87,6 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "radioactieve_kat_on_entity_tick_update",
       "metadata": {
         "dependencies": [
@@ -127,7 +116,6 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mitchu_on_entity_tick_update",
       "metadata": {
         "dependencies": [
@@ -153,11 +141,10 @@
     },
     {
       "name": "Mitchu",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mitchu",
       "path": "~/Mitchu"
     },
@@ -167,7 +154,6 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "radiatie_effect_on_potion_active_tick",
       "metadata": {
         "dependencies": [
@@ -185,7 +171,6 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexbricks",
       "path": "~/Manex vallei/ManexBricks"
     },
@@ -195,7 +180,6 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_wood",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -205,7 +189,6 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_log",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -215,7 +198,6 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_planks",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -225,7 +207,6 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_leaves",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -235,7 +216,6 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_stairs",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -245,7 +225,6 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_slab",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -255,7 +234,6 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_fence",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -265,7 +243,6 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_fence_gate",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -275,7 +252,6 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_wood_recipe",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -285,7 +261,6 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_planks_recipe",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -295,7 +270,6 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_stairs_recipe",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -305,7 +279,6 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_slab_recipe",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -315,7 +288,6 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_fence_recipe",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -325,7 +297,6 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_fence_gate_recipe",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -335,7 +306,6 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_stick_recipe",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -345,7 +315,6 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_brick_stairs",
       "path": "~/Manex vallei/ManexBricks"
     },
@@ -355,7 +324,6 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_brick_slab",
       "path": "~/Manex vallei/ManexBricks"
     },
@@ -365,7 +333,6 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_brick_stairs_recipe",
       "path": "~/Manex vallei/ManexBricks"
     },
@@ -375,7 +342,6 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_brick_slab_recipe",
       "path": "~/Manex vallei/ManexBricks"
     },
@@ -385,27 +351,24 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexhout_planks_recipe_log",
       "path": "~/Manex vallei/Manexhout"
     },
     {
       "name": "EendmanBandiet",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "eendman_bandiet",
       "path": "~/Eendman"
     },
     {
       "name": "BewaakEendman",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bewaak_eendman",
       "path": "~/Eendman"
     },
@@ -415,7 +378,6 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mitchu_ei",
       "path": "~/Mitchu"
     },
@@ -425,7 +387,6 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "baby_mitchu_on_entity_tick_update",
       "metadata": {
         "dependencies": [
@@ -451,11 +412,10 @@
     },
     {
       "name": "BabyMitchu",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "baby_mitchu",
       "path": "~/Mitchu"
     },
@@ -465,7 +425,6 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mitchu_ei_block_destroyed_by_player",
       "metadata": {
         "dependencies": [
@@ -491,11 +450,10 @@
     },
     {
       "name": "Egel",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "egel",
       "path": "~/Egel"
     },
@@ -505,7 +463,6 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "egel_on_entity_tick_update",
       "metadata": {
         "dependencies": [
@@ -535,7 +492,6 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_trapdoor_recipe",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -545,7 +501,6 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_trapdoor_recipe_2",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -555,7 +510,6 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_door_recipe_2",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -565,7 +519,6 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_door_recipe",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -575,7 +528,6 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_trapdoor",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -585,7 +537,6 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_hout_door",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -595,7 +546,6 @@
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rutie_lol_mod"
     },
     {
@@ -604,7 +554,6 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crafting_table_manexhout",
       "path": "~/Manex vallei/Manexhout"
     },
@@ -614,7 +563,6 @@
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kamp_1",
       "path": "~/Manex vallei/Structures"
     },
@@ -624,7 +572,6 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kamp_2",
       "path": "~/Manex vallei/Structures"
     },
@@ -634,7 +581,6 @@
       "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ik_haat_monsters",
       "path": "~/Music discs"
     },
@@ -644,7 +590,6 @@
       "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "poki_poki",
       "path": "~/Music discs"
     },
@@ -654,7 +599,6 @@
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bandiet_1",
       "path": "~/Manex vallei"
     },
@@ -664,7 +608,6 @@
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel",
       "path": "~/Egel"
     },
@@ -674,7 +617,6 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_cluster",
       "path": "~/Egel"
     },
@@ -684,7 +626,6 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_cluster_recipe",
       "path": "~/Egel"
     },
@@ -694,7 +635,6 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_diamond",
       "path": "~/Egel/Swords"
     },
@@ -704,7 +644,6 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_wood",
       "path": "~/Egel/Swords"
     },
@@ -714,7 +653,6 @@
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_iron",
       "path": "~/Egel/Swords"
     },
@@ -724,7 +662,6 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_gold",
       "path": "~/Egel/Swords"
     },
@@ -734,7 +671,6 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_netherite",
       "path": "~/Egel/Swords"
     },
@@ -744,7 +680,6 @@
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_stone",
       "path": "~/Egel/Swords"
     },
@@ -754,7 +689,6 @@
       "sortid": 64,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_diamond_recipe",
       "path": "~/Egel/Swords"
     },
@@ -764,7 +698,6 @@
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_wood_recipe",
       "path": "~/Egel/Swords"
     },
@@ -774,7 +707,6 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_iron_recipe",
       "path": "~/Egel/Swords"
     },
@@ -784,7 +716,6 @@
       "sortid": 67,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_gold_recipe",
       "path": "~/Egel/Swords"
     },
@@ -794,7 +725,6 @@
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_netherite_recipe",
       "path": "~/Egel/Swords"
     },
@@ -804,7 +734,6 @@
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_stone_recipe",
       "path": "~/Egel/Swords"
     },
@@ -814,7 +743,6 @@
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stekel_netherite_recipe_2",
       "path": "~/Egel/Swords"
     },
@@ -824,7 +752,6 @@
       "sortid": 71,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "egel_loot",
       "path": "~/Egel"
     },
@@ -834,7 +761,6 @@
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bandietloottabel",
       "path": "~/Eendman"
     },
@@ -844,7 +770,6 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bewaakhokloot",
       "path": "~/Eendman"
     },
@@ -854,7 +779,6 @@
       "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bewaak_1",
       "path": "~/Manex vallei/Structures"
     },
@@ -864,7 +788,6 @@
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bewaak_2",
       "path": "~/Manex vallei/Structures"
     },
@@ -874,7 +797,6 @@
       "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dorpje_1",
       "path": "~/Manex vallei/Structures"
     },
@@ -884,7 +806,6 @@
       "sortid": 80,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dorpje_2",
       "path": "~/Manex vallei/Structures"
     },
@@ -894,7 +815,6 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bewaakloottable",
       "path": "~/Eendman"
     },
@@ -904,7 +824,6 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dorp_1",
       "path": "~/Manex vallei/Structures"
     },
@@ -914,7 +833,6 @@
       "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "eendmanloottable",
       "path": "~/Eendman"
     },
@@ -924,7 +842,6 @@
       "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "uranium_food_eaten",
       "metadata": {
         "dependencies": [
@@ -942,7 +859,6 @@
       "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "uranium",
       "path": "~/Radiatie"
     },
@@ -952,7 +868,6 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "trommel_recipe",
       "path": "~/Mitchu"
     },
@@ -962,7 +877,6 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "trommel",
       "path": "~/Mitchu"
     },
@@ -972,7 +886,6 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "trommel_right_clicked_in_air",
       "metadata": {
         "dependencies": [
@@ -1002,7 +915,6 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_noteblock_on_block_right_clicked",
       "metadata": {
         "dependencies": [
@@ -1032,7 +944,6 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_noteblock",
       "path": "~/Music discs/Manex noteblock"
     },
@@ -1042,7 +953,6 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_noteblock_recipe",
       "path": "~/Music discs/Manex noteblock"
     },
@@ -1052,7 +962,6 @@
       "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "paal_1",
       "path": "~/Manex vallei/Structures"
     },
@@ -1062,7 +971,6 @@
       "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "kamp_3",
       "path": "~/Manex vallei/Structures"
     },
@@ -1072,7 +980,6 @@
       "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_boots",
       "path": "~/Manex Armor"
     },
@@ -1082,7 +989,6 @@
       "sortid": 85,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_fx_armor",
       "metadata": {
         "eh": false,
@@ -1098,7 +1004,6 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_chestplate",
       "path": "~/Manex Armor"
     },
@@ -1108,7 +1013,6 @@
       "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexiet_smelt",
       "path": "~/Manexiet"
     },
@@ -1118,7 +1022,6 @@
       "sortid": 86,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manex_leggings",
       "path": "~/Manex Armor"
     },
@@ -1128,19 +1031,35 @@
       "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "manexiet_blast",
       "path": "~/Manexiet"
     },
     {
       "name": "Aap",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "aap",
       "path": "~/Aap"
+    },
+    {
+      "name": "RadiatieEffectPotionItem",
+      "type": "potion",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiatie_effect",
+      "path": "~/Radiatie"
+    },
+    {
+      "name": "RadiatieEffect",
+      "type": "potioneffect",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiatie_effect",
+      "path": "~/Radiatie"
     }
   ],
   "variable_elements": [],
@@ -1387,5 +1306,5 @@
     "modElementsPackage": "net.mcreator.rutielolmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100118117
+  "mcreatorVersion": 202100353117
 }

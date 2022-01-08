@@ -25,6 +25,7 @@ public class MitchuRenderer {
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(MitchuEntity.entity, renderManager -> {
 				return new MobRenderer(renderManager, new Modelfull_block(), 0.7999999999999999f) {
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("rutielol_mod:textures/mitchu_texture.png");
@@ -39,6 +40,7 @@ public class MitchuRenderer {
 	// Paste this class into your mod and generate all required imports
 	public static class Modelfull_block extends EntityModel<Entity> {
 		private final ModelRenderer bone;
+
 		public Modelfull_block() {
 			textureWidth = 64;
 			textureHeight = 64;
@@ -60,6 +62,8 @@ public class MitchuRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 		}
 	}
+
 }

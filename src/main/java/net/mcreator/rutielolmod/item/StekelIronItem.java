@@ -17,6 +17,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 public class StekelIronItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:stekel_iron")
 	public static final Item block = null;
+
 	public StekelIronItem(RutielolModModElements instance) {
 		super(instance, 60);
 	}
@@ -45,7 +46,7 @@ public class StekelIronItem extends RutielolModModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Items.IRON_INGOT, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Items.IRON_INGOT));
 			}
 		}, 3, -2.4f, new Item.Properties().group(RutieLolModItemGroup.tab)) {
 		}.setRegistryName("stekel_iron"));

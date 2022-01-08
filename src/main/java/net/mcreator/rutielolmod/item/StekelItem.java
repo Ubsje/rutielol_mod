@@ -15,6 +15,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 public class StekelItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:stekel")
 	public static final Item block = null;
+
 	public StekelItem(RutielolModModElements instance) {
 		super(instance, 55);
 	}
@@ -23,6 +24,7 @@ public class StekelItem extends RutielolModModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
+
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(RutieLolModItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));

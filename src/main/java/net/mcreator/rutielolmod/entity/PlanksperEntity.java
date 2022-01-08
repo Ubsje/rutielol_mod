@@ -16,12 +16,11 @@ import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
-import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
-import net.minecraft.tags.FluidTags;
 import net.minecraft.pathfinding.SwimmerPathNavigator;
+import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Items;
@@ -50,6 +49,7 @@ public class PlanksperEntity extends RutielolModModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.WATER_CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.3f, 0.3f)).build("planksper").setRegistryName("planksper");
+
 	public PlanksperEntity(RutielolModModElements instance) {
 		super(instance, 23);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new PlanksperRenderer.ModelRegisterHandler());
@@ -83,6 +83,7 @@ public class PlanksperEntity extends RutielolModModElements.ModElement {
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				SquidEntity::func_223365_b);
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
@@ -105,24 +106,36 @@ public class PlanksperEntity extends RutielolModModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
+			this.setPathPriority(PathNodeType.WATER, 0);
 			this.moveController = new MovementController(this) {
 				@Override
 				public void tick() {
-					if (CustomEntity.this.areEyesInFluid(FluidTags.WATER))
+					if (CustomEntity.this.isInWater())
 						CustomEntity.this.setMotion(CustomEntity.this.getMotion().add(0, 0.005, 0));
 					if (this.action == MovementController.Action.MOVE_TO && !CustomEntity.this.getNavigator().noPath()) {
 						double dx = this.posX - CustomEntity.this.getPosX();
 						double dy = this.posY - CustomEntity.this.getPosY();
 						double dz = this.posZ - CustomEntity.this.getPosZ();
-						dy = dy / (double) MathHelper.sqrt(dx * dx + dy * dy + dz * dz);
-						CustomEntity.this.rotationYaw = this.limitAngle(CustomEntity.this.rotationYaw,
-								(float) (MathHelper.atan2(dz, dx) * (double) (180 / (float) Math.PI)) - 90, 90);
+						float f = (float) (MathHelper.atan2(dz, dx) * (double) (180 / Math.PI)) - 90;
+						float f1 = (float) (this.speed * CustomEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
+						CustomEntity.this.rotationYaw = this.limitAngle(CustomEntity.this.rotationYaw, f, 10);
 						CustomEntity.this.renderYawOffset = CustomEntity.this.rotationYaw;
-						CustomEntity.this.setAIMoveSpeed(MathHelper.lerp(0.125f, CustomEntity.this.getAIMoveSpeed(),
-								(float) (this.speed * CustomEntity.this.getAttributeValue(Attributes.MOVEMENT_SPEED))));
-						CustomEntity.this.setMotion(CustomEntity.this.getMotion().add(0, CustomEntity.this.getAIMoveSpeed() * dy * 0.1, 0));
+						CustomEntity.this.rotationYawHead = CustomEntity.this.rotationYaw;
+						if (CustomEntity.this.isInWater()) {
+							CustomEntity.this.setAIMoveSpeed((float) CustomEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
+							float f2 = -(float) (MathHelper.atan2(dy, MathHelper.sqrt(dx * dx + dz * dz)) * (180F / Math.PI));
+							f2 = MathHelper.clamp(MathHelper.wrapDegrees(f2), -85, 85);
+							CustomEntity.this.rotationPitch = this.limitAngle(CustomEntity.this.rotationPitch, f2, 5);
+							float f3 = MathHelper.cos(CustomEntity.this.rotationPitch * (float) (Math.PI / 180.0));
+							CustomEntity.this.setMoveForward(f3 * f1);
+							CustomEntity.this.setMoveVertical((float) (f1 * dy));
+						} else {
+							CustomEntity.this.setAIMoveSpeed(f1 * 0.05F);
+						}
 					} else {
 						CustomEntity.this.setAIMoveSpeed(0);
+						CustomEntity.this.setMoveVertical(0);
+						CustomEntity.this.setMoveForward(0);
 					}
 				}
 			};
@@ -149,7 +162,7 @@ public class PlanksperEntity extends RutielolModModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(Items.FEATHER, (int) (1)));
+			this.entityDropItem(new ItemStack(Items.FEATHER));
 		}
 
 		@Override
@@ -175,8 +188,8 @@ public class PlanksperEntity extends RutielolModModElements.ModElement {
 		}
 
 		@Override
-		public boolean isNotColliding(IWorldReader worldreader) {
-			return worldreader.checkNoEntityCollision(this, VoxelShapes.create(this.getBoundingBox()));
+		public boolean isNotColliding(IWorldReader world) {
+			return world.checkNoEntityCollision(this);
 		}
 
 		@Override

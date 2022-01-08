@@ -39,6 +39,7 @@ public class BewaakEendmanEntity extends RutielolModModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.5999999999999999f)).build("bewaak_eendman").setRegistryName("bewaak_eendman");
+
 	public BewaakEendmanEntity(RutielolModModElements instance) {
 		super(instance, 18);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BewaakEendmanRenderer.ModelRegisterHandler());
@@ -55,6 +56,7 @@ public class BewaakEendmanEntity extends RutielolModModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {

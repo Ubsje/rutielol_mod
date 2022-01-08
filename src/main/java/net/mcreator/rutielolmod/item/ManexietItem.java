@@ -15,6 +15,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 public class ManexietItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manexiet")
 	public static final Item block = null;
+
 	public ManexietItem(RutielolModModElements instance) {
 		super(instance, 16);
 	}
@@ -23,6 +24,7 @@ public class ManexietItem extends RutielolModModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
+
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(RutieLolModItemGroup.tab).maxStackSize(64).isImmuneToFire().rarity(Rarity.RARE));

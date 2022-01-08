@@ -39,10 +39,12 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 @RutielolModModElements.ModElement.Tag
 public class ManexvalleiBiome extends RutielolModModElements.ModElement {
 	public static Biome biome;
+
 	public ManexvalleiBiome(RutielolModModElements instance) {
 		super(instance, 25);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
+
 	private static class BiomeRegisterHandler {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
@@ -56,7 +58,7 @@ public class ManexvalleiBiome extends RutielolModModElements.ModElement {
 						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(ManexhoutLogBlock.block.getDefaultState()),
 								new SimpleBlockStateProvider(ManexhoutLeavesBlock.block.getDefaultState()),
 								new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-								new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1))).setIgnoreVines().setMaxWaterDepth(0).build())
+								new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1))).setIgnoreVines().build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
@@ -77,6 +79,7 @@ public class ManexvalleiBiome extends RutielolModModElements.ModElement {
 			}
 		}
 	}
+
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), BiomeDictionary.Type.PLAINS);

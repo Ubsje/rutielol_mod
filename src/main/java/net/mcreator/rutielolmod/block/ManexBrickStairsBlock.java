@@ -26,6 +26,7 @@ import java.util.Collections;
 public class ManexBrickStairsBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manex_brick_stairs")
 	public static final Block block = null;
+
 	public ManexBrickStairsBlock(RutielolModModElements instance) {
 		super(instance, 2);
 	}
@@ -36,6 +37,7 @@ public class ManexBrickStairsBlock extends RutielolModModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(RutieLolModItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
 			super(() -> new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(3f, 2f).setLightLevel(s -> 0))

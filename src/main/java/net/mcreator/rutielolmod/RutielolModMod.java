@@ -46,6 +46,7 @@ public class RutielolModMod {
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation("rutielol_mod", "rutielol_mod"),
 			() -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	public RutielolModModElements elements;
+
 	public RutielolModMod() {
 		elements = new RutielolModModElements();
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -86,8 +87,10 @@ public class RutielolModMod {
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
 		elements.registerSounds(event);
 	}
+
 	private static class RutielolModModFMLBusEvents {
 		private final RutielolModMod parent;
+
 		RutielolModModFMLBusEvents(RutielolModMod parent) {
 			this.parent = parent;
 		}

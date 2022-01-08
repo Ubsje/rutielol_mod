@@ -19,6 +19,7 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
 import net.minecraft.world.ISeedReader;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
@@ -47,6 +48,7 @@ import java.util.Collections;
 public class ManexietOreBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manexiet_ore")
 	public static final Block block = null;
+
 	public ManexietOreBlock(RutielolModModElements instance) {
 		super(instance, 15);
 		MinecraftForge.EVENT_BUS.register(this);
@@ -59,11 +61,17 @@ public class ManexietOreBlock extends RutielolModModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(RutieLolModItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.4000000000000001f, 10f).setLightLevel(s -> 0)
 					.harvestLevel(4).harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("manexiet_ore");
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
 		}
 
 		@Override
@@ -76,18 +84,21 @@ public class ManexietOreBlock extends RutielolModModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(ManexietItem.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(ManexietItem.block));
 		}
 	}
+
 	private static Feature<OreFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	private static IRuleTestType<CustomRuleTest> CUSTOM_MATCH = null;
+
 	private static class CustomRuleTest extends RuleTest {
 		static final CustomRuleTest INSTANCE = new CustomRuleTest();
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
+
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.STONE)
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -119,6 +130,7 @@ public class ManexietOreBlock extends RutielolModModElements.ModElement {
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("rutielol_mod:manexiet_ore"), configuredFeature);
 		}
 	}
+
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;

@@ -26,6 +26,7 @@ public class RadioactieveKatRenderer {
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(RadioactieveKatEntity.entity, renderManager -> {
 				return new MobRenderer(renderManager, new Modelkat(), 0.5f) {
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("rutielol_mod:textures/radioactieve_kat_2.png");
@@ -49,6 +50,7 @@ public class RadioactieveKatRenderer {
 		private final ModelRenderer head;
 		private final ModelRenderer body;
 		private final ModelRenderer rotation;
+
 		public Modelkat() {
 			textureWidth = 64;
 			textureHeight = 64;
@@ -112,6 +114,7 @@ public class RadioactieveKatRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 			this.front_right_leg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
 			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
@@ -120,4 +123,5 @@ public class RadioactieveKatRenderer {
 			this.front_left_leg.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		}
 	}
+
 }

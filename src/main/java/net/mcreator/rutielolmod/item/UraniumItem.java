@@ -15,13 +15,16 @@ import net.mcreator.rutielolmod.procedures.UraniumFoodEatenProcedure;
 import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 @RutielolModModElements.ModElement.Tag
 public class UraniumItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:uranium")
 	public static final Item block = null;
+
 	public UraniumItem(RutielolModModElements instance) {
 		super(instance, 76);
 	}
@@ -30,10 +33,13 @@ public class UraniumItem extends RutielolModModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new FoodItemCustom());
 	}
+
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(RutieLolModItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(0).saturation(0f).setAlwaysEdible().build()));
+					.food((new Food.Builder()).hunger(0).saturation(0f).setAlwaysEdible()
+
+							.build()));
 			setRegistryName("uranium");
 		}
 
@@ -48,11 +54,9 @@ public class UraniumItem extends RutielolModModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				UraniumFoodEatenProcedure.executeProcedure($_dependencies);
-			}
+
+			UraniumFoodEatenProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
 	}

@@ -15,18 +15,18 @@ import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.rutielolmod.entity.BabyMitchuEntity;
-import net.mcreator.rutielolmod.RutielolModModElements;
 import net.mcreator.rutielolmod.RutielolModMod;
 
 import java.util.Map;
 
-@RutielolModModElements.ModElement.Tag
-public class MitchuEiBlockDestroyedByPlayerProcedure extends RutielolModModElements.ModElement {
-	public MitchuEiBlockDestroyedByPlayerProcedure(RutielolModModElements instance) {
-		super(instance, 43);
-	}
+public class MitchuEiBlockDestroyedByPlayerProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				RutielolModMod.LOGGER.warn("Failed to load dependency world for procedure MitchuEiBlockDestroyedByPlayer!");
+			return;
+		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
 				RutielolModMod.LOGGER.warn("Failed to load dependency x for procedure MitchuEiBlockDestroyedByPlayer!");
@@ -42,19 +42,15 @@ public class MitchuEiBlockDestroyedByPlayerProcedure extends RutielolModModEleme
 				RutielolModMod.LOGGER.warn("Failed to load dependency z for procedure MitchuEiBlockDestroyedByPlayer!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				RutielolModMod.LOGGER.warn("Failed to load dependency world for procedure MitchuEiBlockDestroyedByPlayer!");
-			return;
-		}
+		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof ServerWorld) {
 			Entity entityToSpawn = new BabyMitchuEntity.CustomEntity(BabyMitchuEntity.entity, (World) world);
 			entityToSpawn.setLocationAndAngles((x + 0.5), y, (z + 0.5), (float) 0, (float) 0);
 			entityToSpawn.setRenderYawOffset((float) 0);
+			entityToSpawn.setRotationYawHead((float) 0);
 			entityToSpawn.setMotion(0.1, 0.4, 0);
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
@@ -65,6 +61,7 @@ public class MitchuEiBlockDestroyedByPlayerProcedure extends RutielolModModEleme
 			Entity entityToSpawn = new BabyMitchuEntity.CustomEntity(BabyMitchuEntity.entity, (World) world);
 			entityToSpawn.setLocationAndAngles((x + 0.5), y, (z + 0.5), (float) 0, (float) 0);
 			entityToSpawn.setRenderYawOffset((float) 0);
+			entityToSpawn.setRotationYawHead((float) 0);
 			entityToSpawn.setMotion((-0.1), 0.4, 0);
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),

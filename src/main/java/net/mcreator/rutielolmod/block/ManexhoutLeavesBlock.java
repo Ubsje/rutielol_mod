@@ -26,6 +26,7 @@ import java.util.Collections;
 public class ManexhoutLeavesBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manexhout_leaves")
 	public static final Block block = null;
+
 	public ManexhoutLeavesBlock(RutielolModModElements instance) {
 		super(instance, 4);
 	}
@@ -36,10 +37,16 @@ public class ManexhoutLeavesBlock extends RutielolModModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(RutieLolModItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends LeavesBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid());
 			setRegistryName("manexhout_leaves");
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 1;
 		}
 
 		@Override

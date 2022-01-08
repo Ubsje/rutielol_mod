@@ -22,7 +22,7 @@ public class RutieLolModItemGroup extends RutielolModModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(ManexietItem.block, (int) (1));
+				return new ItemStack(ManexietItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -31,5 +31,6 @@ public class RutieLolModItemGroup extends RutielolModModElements.ModElement {
 			}
 		};
 	}
+
 	public static ItemGroup tab;
 }

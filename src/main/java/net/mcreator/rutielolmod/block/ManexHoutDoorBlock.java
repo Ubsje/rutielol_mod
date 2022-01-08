@@ -7,8 +7,6 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.state.properties.DoubleBlockHalf;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.loot.LootContext;
@@ -33,6 +31,7 @@ import java.util.Collections;
 public class ManexHoutDoorBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manex_hout_door")
 	public static final Block block = null;
+
 	public ManexHoutDoorBlock(RutielolModModElements instance) {
 		super(instance, 10);
 	}
@@ -49,16 +48,12 @@ public class ManexHoutDoorBlock extends RutielolModModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends DoorBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(1)
 					.harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("manex_hout_door");
-		}
-
-		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
 		}
 
 		@Override

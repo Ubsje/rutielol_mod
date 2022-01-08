@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Radiatie",
+    "splashName": "Splash Radiatie",
+    "lingeringName": "Lingering Radiatie",
+    "arrowName": "Arrow of Radiatie",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:RadiatieEffect"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

@@ -4,6 +4,8 @@ package net.mcreator.rutielolmod.block;
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.common.ToolType;
 
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -23,6 +25,7 @@ import java.util.Collections;
 public class ManexbricksBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manexbricks")
 	public static final Block block = null;
+
 	public ManexbricksBlock(RutielolModModElements instance) {
 		super(instance, 1);
 	}
@@ -33,11 +36,17 @@ public class ManexbricksBlock extends RutielolModModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(RutieLolModItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(1)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("manexbricks");
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
 		}
 
 		@Override

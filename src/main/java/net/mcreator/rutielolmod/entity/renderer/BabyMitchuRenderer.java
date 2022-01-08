@@ -25,6 +25,7 @@ public class BabyMitchuRenderer {
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(BabyMitchuEntity.entity, renderManager -> {
 				return new MobRenderer(renderManager, new Modelbaby_mitchu(), 0.5f) {
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("rutielol_mod:textures/baby_mitchu.png");
@@ -39,6 +40,7 @@ public class BabyMitchuRenderer {
 	// Paste this class into your mod and generate all required imports
 	public static class Modelbaby_mitchu extends EntityModel<Entity> {
 		private final ModelRenderer mitchu;
+
 		public Modelbaby_mitchu() {
 			textureWidth = 32;
 			textureHeight = 32;
@@ -60,6 +62,8 @@ public class BabyMitchuRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 		}
 	}
+
 }

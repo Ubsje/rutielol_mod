@@ -46,15 +46,18 @@ import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.entity.renderer.BabyMitchuRenderer;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
+import java.util.stream.Stream;
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 @RutielolModModElements.ModElement.Tag
 public class BabyMitchuEntity extends RutielolModModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.5f, 0.5f)).build("baby_mitchu").setRegistryName("baby_mitchu");
+
 	public BabyMitchuEntity(RutielolModModElements instance) {
 		super(instance, 17);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BabyMitchuRenderer.ModelRegisterHandler());
@@ -71,6 +74,7 @@ public class BabyMitchuEntity extends RutielolModModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
@@ -204,10 +208,6 @@ public class BabyMitchuEntity extends RutielolModModElements.ModElement {
 				}
 			}
 			sourceentity.startRiding(this);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
 			return retval;
 		}
 
@@ -218,14 +218,11 @@ public class BabyMitchuEntity extends RutielolModModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BabyMitchuOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
-			}
+
+			BabyMitchuOnEntityTickUpdateProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
@@ -240,7 +237,7 @@ public class BabyMitchuEntity extends RutielolModModElements.ModElement {
 		public boolean isBreedingItem(ItemStack stack) {
 			if (stack == null)
 				return false;
-			if (new ItemStack(Items.QUARTZ, (int) (1)).getItem() == stack.getItem())
+			if (Items.QUARTZ == stack.getItem())
 				return true;
 			return false;
 		}

@@ -45,15 +45,18 @@ import net.mcreator.rutielolmod.procedures.MitchuEiBlockDestroyedByPlayerProcedu
 import net.mcreator.rutielolmod.itemgroup.RutieLolModItemGroup;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
+import java.util.AbstractMap;
 
 @RutielolModModElements.ModElement.Tag
 public class MitchuEiBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:mitchu_ei")
 	public static final Block block = null;
+
 	public MitchuEiBlock(RutielolModModElements instance) {
 		super(instance, 14);
 	}
@@ -70,9 +73,11 @@ public class MitchuEiBlock extends RutielolModModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block implements IWaterLoggable {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
@@ -82,21 +87,43 @@ public class MitchuEiBlock extends RutielolModModElements.ModElement {
 
 		@Override
 		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
+			return state.getFluidState().isEmpty();
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 0;
 		}
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.or(makeCuboidShape(12, 0, 12, 4, 12, 4));
+					return VoxelShapes.or(makeCuboidShape(12, 0, 12, 4, 12, 4)
+
+					)
+
+					;
 				case NORTH :
-					return VoxelShapes.or(makeCuboidShape(4, 0, 4, 12, 12, 12));
+					return VoxelShapes.or(makeCuboidShape(4, 0, 4, 12, 12, 12)
+
+					)
+
+					;
 				case EAST :
-					return VoxelShapes.or(makeCuboidShape(12, 0, 4, 4, 12, 12));
+					return VoxelShapes.or(makeCuboidShape(12, 0, 4, 4, 12, 12)
+
+					)
+
+					;
 				case WEST :
-					return VoxelShapes.or(makeCuboidShape(4, 0, 12, 12, 12, 4));
+					return VoxelShapes.or(makeCuboidShape(4, 0, 12, 12, 12, 4)
+
+					)
+
+					;
 			}
 		}
 
@@ -157,19 +184,16 @@ public class MitchuEiBlock extends RutielolModModElements.ModElement {
 		}
 
 		@Override
-		public boolean removedByPlayer(BlockState state, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, FluidState fluid) {
-			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest, fluid);
+		public boolean removedByPlayer(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, FluidState fluid) {
+			boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				MitchuEiBlockDestroyedByPlayerProcedure.executeProcedure($_dependencies);
-			}
+
+			MitchuEiBlockDestroyedByPlayerProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
 	}

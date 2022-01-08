@@ -35,6 +35,7 @@ public class ManexFxArmorItem extends RutielolModModElements.ModElement {
 	public static final Item legs = null;
 	@ObjectHolder("rutielol_mod:manex_fx_armor_boots")
 	public static final Item boots = null;
+
 	public ManexFxArmorItem(RutielolModModElements instance) {
 		super(instance, 85);
 	}
@@ -139,12 +140,14 @@ public class ManexFxArmorItem extends RutielolModModElements.ModElement {
 			}
 		}.setRegistryName("manex_fx_armor_boots"));
 	}
+
 	// Made with Blockbench 3.8.4
 	// Exported for Minecraft version 1.15 - 1.16
 	// Paste this class into your mod and generate all required imports
 	public static class Modelmanexleggings extends EntityModel<Entity> {
 		private final ModelRenderer RightLeg;
 		private final ModelRenderer LeftLeg;
+
 		public Modelmanexleggings() {
 			textureWidth = 64;
 			textureHeight = 64;
@@ -183,6 +186,7 @@ public class ManexFxArmorItem extends RutielolModModElements.ModElement {
 	public static class Modelmanexschoen extends EntityModel<Entity> {
 		private final ModelRenderer RightLeg;
 		private final ModelRenderer LeftLeg;
+
 		public Modelmanexschoen() {
 			textureWidth = 64;
 			textureHeight = 64;
@@ -222,6 +226,7 @@ public class ManexFxArmorItem extends RutielolModModElements.ModElement {
 		private final ModelRenderer Body;
 		private final ModelRenderer RightArm;
 		private final ModelRenderer LeftArm;
+
 		public Modelmanexchestplate() {
 			textureWidth = 64;
 			textureHeight = 64;
@@ -257,4 +262,5 @@ public class ManexFxArmorItem extends RutielolModModElements.ModElement {
 			modelRenderer.rotateAngleZ = z;
 		}
 	}
+
 }

@@ -15,6 +15,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 public class PokiPokiItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:poki_poki")
 	public static final Item block = null;
+
 	public PokiPokiItem(RutielolModModElements instance) {
 		super(instance, 52);
 	}
@@ -23,6 +24,7 @@ public class PokiPokiItem extends RutielolModModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new MusicDiscItemCustom());
 	}
+
 	public static class MusicDiscItemCustom extends MusicDiscItem {
 		public MusicDiscItemCustom() {
 			super(0, RutielolModModElements.sounds.get(new ResourceLocation("rutielol_mod:disc_poki")),

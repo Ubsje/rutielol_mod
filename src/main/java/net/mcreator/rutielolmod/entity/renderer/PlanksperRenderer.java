@@ -25,6 +25,7 @@ public class PlanksperRenderer {
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(PlanksperEntity.entity, renderManager -> {
 				return new MobRenderer(renderManager, new Modelplanksper(), 0.2f) {
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("rutielol_mod:textures/texture_1_1.png");
@@ -39,6 +40,7 @@ public class PlanksperRenderer {
 	// Paste this class into your mod and generate all required imports
 	public static class Modelplanksper extends EntityModel<Entity> {
 		private final ModelRenderer bone;
+
 		public Modelplanksper() {
 			textureWidth = 32;
 			textureHeight = 32;
@@ -67,4 +69,5 @@ public class PlanksperRenderer {
 			modelRenderer.rotateAngleZ = z;
 		}
 	}
+
 }

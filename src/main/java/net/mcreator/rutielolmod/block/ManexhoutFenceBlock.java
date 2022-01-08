@@ -27,6 +27,7 @@ import java.util.Collections;
 public class ManexhoutFenceBlock extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:manexhout_fence")
 	public static final Block block = null;
+
 	public ManexhoutFenceBlock(RutielolModModElements instance) {
 		super(instance, 12);
 	}
@@ -37,6 +38,7 @@ public class ManexhoutFenceBlock extends RutielolModModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(RutieLolModItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends FenceBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0));

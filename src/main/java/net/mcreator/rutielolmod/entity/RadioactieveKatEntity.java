@@ -43,14 +43,17 @@ import net.mcreator.rutielolmod.item.UraniumItem;
 import net.mcreator.rutielolmod.entity.renderer.RadioactieveKatRenderer;
 import net.mcreator.rutielolmod.RutielolModModElements;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 @RutielolModModElements.ModElement.Tag
 public class RadioactieveKatEntity extends RutielolModModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 0.7000000000000001f)).build("radioactieve_kat").setRegistryName("radioactieve_kat");
+
 	public RadioactieveKatEntity(RutielolModModElements instance) {
 		super(instance, 24);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new RadioactieveKatRenderer.ModelRegisterHandler());
@@ -76,6 +79,7 @@ public class RadioactieveKatEntity extends RutielolModModElements.ModElement {
 				(entityType, world, reason, pos,
 						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
 	}
+
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
@@ -121,7 +125,7 @@ public class RadioactieveKatEntity extends RutielolModModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(UraniumItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(UraniumItem.block));
 		}
 
 		@Override
@@ -141,14 +145,11 @@ public class RadioactieveKatEntity extends RutielolModModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				RadioactieveKatOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
-			}
+
+			RadioactieveKatOnEntityTickUpdateProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

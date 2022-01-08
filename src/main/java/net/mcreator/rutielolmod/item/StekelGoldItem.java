@@ -17,6 +17,7 @@ import net.mcreator.rutielolmod.RutielolModModElements;
 public class StekelGoldItem extends RutielolModModElements.ModElement {
 	@ObjectHolder("rutielol_mod:stekel_gold")
 	public static final Item block = null;
+
 	public StekelGoldItem(RutielolModModElements instance) {
 		super(instance, 61);
 	}
@@ -45,7 +46,7 @@ public class StekelGoldItem extends RutielolModModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Items.GOLD_INGOT, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Items.GOLD_INGOT));
 			}
 		}, 3, -2.4f, new Item.Properties().group(RutieLolModItemGroup.tab)) {
 		}.setRegistryName("stekel_gold"));

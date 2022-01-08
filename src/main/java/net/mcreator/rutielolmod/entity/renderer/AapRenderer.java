@@ -26,6 +26,7 @@ public class AapRenderer {
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(AapEntity.entity, renderManager -> {
 				return new MobRenderer(renderManager, new Modelaap(), 0.5f) {
+
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("rutielol_mod:textures/aap.png");
@@ -59,6 +60,7 @@ public class AapRenderer {
 		private final ModelRenderer cube_r12;
 		private final ModelRenderer cube_r13;
 		private final ModelRenderer head;
+
 		public Modelaap() {
 			textureWidth = 64;
 			textureHeight = 64;
@@ -185,6 +187,7 @@ public class AapRenderer {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 			this.rightarm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 			this.leftleg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
 			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
@@ -193,4 +196,5 @@ public class AapRenderer {
 			this.leftarm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		}
 	}
+
 }
